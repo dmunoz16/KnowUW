@@ -14,3 +14,18 @@ body{
 	animation: fadeIn 6s;
 	text-shadow: 2px 2px 2px black;
 }
+.moviereviews{
+	animation: fadeIn 6s;
+	color: white;
+	font-size: 25px;
+	line-height: 0px;
+	text-decoration: none;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-shadow: 2px 2px 2px black;
+}
+.moviereviews:hover {
+	text-decoration: underline;
+	text-shadow: 2px 2px 2px black;
+	cursor: pointer;
+}
