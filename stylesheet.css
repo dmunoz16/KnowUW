@@ -12,3 +12,15 @@ body{
 
 
 }
+.links{
+	top: 8px;
+	right: 12px;
+	position: absolute;
+	text-decoration: none;
+	line-height: 0px;
+	font-size: 25px;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	animation: fadeIn 6s;
+	text-shadow: 2px 2px 2px black;
+}
