@@ -4,19 +4,32 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-
-    <title>KnowUW</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<title>KnowUW</title>
+	<!-- Attempt to integrate Ben W nav bar at top of page -->
+	<p class="linksMR">  <a class="moviereviewsMR" href="favmovies/favmovies.html">MOVIE REVIEWS</a>  |  <a class="photographyMR" href="../topgrossing/topgrossing.html">PHOTOGRAPHY</a>  |  <a class="scriptsMR" href="../bestcinematicshots/bestcinematicshots.html">SCRIPTS</a> </p>
 </head>
 <h1>Welcome to the KnowUW Map</h1>
 <body>
-	<!-- Example of mapping/areas
+	
+	<!-- Example of mapping/areas-->
 	<map name="imagemap">
-		<area shape="rect" coords="200,0,400,200" href="" />
-		<area shape="circle" coords="300,300,100" href="" />
+		<area shape="rect" coords="200,0,400,200" href="https://www.tacoma.uw.edu/" alt="whitney" />
+		<area shape="circle" coords="300,300,100" href="https://www.tacoma.uw.edu/" alt="whitney" />
 	</map>
-	-->
-    <img id="backgroundImg" src="BlankMap.jpg" alt="UWMAP" usemap="#imagemap">
+	<!-- BACKGROUND IMAGE OF MAP -->
+	<img id="backgroundImg" src="BlankMap.jpg" alt="UWMAP" usemap="#imagemap">
+	<!--Example of NavBar at bottom of map with info-->
+	
+	<section class="navbar">
+        <section class="dropdown">
+            <button class="dropbtn">Navigation: \/</button>
+            <section class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">Games</a>
+                <a href="#">Movies</a>
+            </section>
+        </section>
+    </section>
 </body>
-
 </html>
