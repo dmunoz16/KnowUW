@@ -3,11 +3,19 @@
 	max-width: 80%;
 	max-height: 100%;
   animation: fadeIn ease 5s;
+  z-index: -1;
+  position: absolute;
   /*-webkit-animation: fadeIn ease 4s;
   -moz-animation: fadeIn ease 4s;
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;*/
 } 
+#whitneyBlg{
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
 @keyframes fadeIn{
   0%{
     opacity: 0;
@@ -82,7 +90,10 @@ h1{
   text-align: center;
   border-right: 2px solid gray;
 }
-
+p{
+  color: black;
+  text-align: left;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
