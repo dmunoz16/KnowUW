@@ -15,7 +15,7 @@
   -ms-animation: fadeIn ease 4s;*/
 } 
 
-#whitneyBlg{
+/*#whitneyBlg{
   z-index: 0;
   width: 140px;
   top: 108px;
@@ -28,11 +28,11 @@
   -webkit-min-height: 100px;*/
 }
 
-#whitneyBlg:hover{
+/*#whitneyBlg:hover{
   transform: scale(1.2);
   cursor: pointer;
   animation: fadeIn ease 5s;
-}
+}*/
 
 @keyframes fadeIn{
   0%{
@@ -85,6 +85,9 @@ footer {
 .welcomeBar{
   text-align: center;
   font-size: 2.5vw;
+}
+.welcomeBar:hover{
+  cursor: pointer;
 }
 
 #uwLogo {
