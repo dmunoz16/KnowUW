@@ -28,12 +28,12 @@ footer {
 }
 
 .topnav a:hover {
-  background-color: gold;
+  background-color: rgb(145, 123, 76);
   color: black;
 }
 
 .topnav a.active {
-  background-color: rgb(134,65,191);
+  background-color: rgb(51,0,111);
   color: white;
 }
 
