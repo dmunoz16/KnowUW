@@ -1,5 +1,9 @@
 
 #backgroundImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
 	max-width: 80%;
 	max-height: 100%;
   animation: fadeIn ease 5s;
@@ -10,6 +14,7 @@
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;*/
 } 
+
 #whitneyBlg{
   z-index: 0;
   width: 140px;
@@ -21,13 +26,14 @@
   -webkit-max-height: 100%;
   -webkit-min-width: 100%;
   -webkit-min-height: 100px;*/
-
 }
+
 #whitneyBlg:hover{
   transform: scale(1.2);
   cursor: pointer;
   animation: fadeIn ease 5s;
 }
+
 @keyframes fadeIn{
   0%{
     opacity: 0;
@@ -36,6 +42,7 @@
     opacity: 1;
   }
 }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -69,30 +76,29 @@ footer {
   background-color: #b7a57a;
   color: black;
 }
+
 .topnav a.active {
   background-color: #4b2e83;
   color: white;
 }
-#backgroundImg{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: max-content;
-}
+
 .welcomeBar{
   text-align: center;
   font-size: 2.5vw;
 }
+
 #uwLogo {
 	height: 40px;
 	float: right;
 }
+
 h1{
   text-align: center;
   color: white;
   margin: 0;
   padding: 0;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -106,10 +112,12 @@ h1{
   text-align: center;
   border-right: 2px solid gray;
 }
+
 p{
   color: black;
   text-align: left;
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
