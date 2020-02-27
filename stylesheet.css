@@ -84,6 +84,7 @@ h1{
 }
 p{
   color: black;
+  text-align: left;
 }
 
 /* Clear floats after the columns */
