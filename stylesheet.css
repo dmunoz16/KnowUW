@@ -82,6 +82,9 @@ h1{
   text-align: center;
   border-right: 2px solid gray;
 }
+p{
+  color: black;
+}
 
 /* Clear floats after the columns */
 .row:after {
