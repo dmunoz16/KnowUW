@@ -4,7 +4,6 @@
 	max-height: 100%;
   animation: fadeIn ease 5s;
   z-index: -1;
-  position: absolute;
   /*-webkit-animation: fadeIn ease 4s;
   -moz-animation: fadeIn ease 4s;
   -o-animation: fadeIn ease 4s;
