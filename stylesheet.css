@@ -2,8 +2,20 @@
 #backgroundImg{
 	max-width: 80%;
 	max-height: 100%;
+  animation: fadeIn ease 5s;
+  /*-webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;*/
 } 
-
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -68,6 +80,7 @@ h1{
   background-color: white;
   color: rgb(67, 67, 182);
   text-align: center;
+  border-right: 2px solid gray;
 }
 
 /* Clear floats after the columns */
