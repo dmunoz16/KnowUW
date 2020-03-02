@@ -22,6 +22,10 @@
   height: 125px;
   position: relative;
 }
+.KnowUWLogo:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
 /*#whitneyBlg{
   z-index: 0;
   width: 140px;
@@ -63,6 +67,8 @@ header {
 footer {
   background-color: #85754d;
   color: white;
+  vertical-align: bottom;
+  padding: 5px;
 }
 
 .topnav {
@@ -102,6 +108,7 @@ footer {
 	float: right;
 }
 
+
 h1{
   text-align: center;
   color: white;
@@ -123,10 +130,20 @@ h1{
   border-right: 2px solid gray;
   border-left: 2px solid gray;
 }
+.officialsite{
+  text-align: center;
+  color: white;
+}
+p.contactinfo{
+  text-align: center;
+}
 
 p{
   color: black;
   text-align: left;
+}
+.emaillink{
+  color: black;
 }
 
 /* Clear floats after the columns */
