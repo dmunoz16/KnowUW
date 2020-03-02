@@ -49,17 +49,22 @@
 	<!-- The footer with: contacts, other pages, etc. at the bottom of the page -->
 	<footer>
 		<div class="row">
+			
 			<div class="column">
 				<h2>Contact Us</h2>
 				<p>Some text..</p>
 			</div>
-				<div class="column">
+
+			<div class="column">
 				<h2>Academic Calender</h2>
 				<p>Some text..</p>
 			</div>
-				<div class="column">
+
+			<div class="column">
 				<h2>Events</h2>
-				<p>Some text..</p>
+				<p>Here are the 5 upcoming events:</p>
+                <div id="events">
+                </div>
 			</div>
 		</div>
 		<!--
@@ -84,6 +89,187 @@
 
 	<!-- external javascript file -->
 	<script>
+		// source: https://www.tacoma.uw.edu/calendar/calendar#/?i=17
+        // create array to keep all event information (updated on events on 2/27/2020)
+        // event descriptions
+        let eventDescript = new Array(20);
+        eventDescript[0] = "Social Work Challenges and Progress";
+        eventDescript[1] = "Milgard Invitational Case Competition";
+        eventDescript[2] = "SHRM Lunch & Learn";
+        eventDescript[3] = "2020 Urban Studies Forum 'Attainable Housing and the Future of Prosperity & Inclusion in Pierce County'";
+        eventDescript[4] = "Mental Health Awareness Day: TBI and PTSD"; // double date
+        eventDescript[5] = "E-sports, Gaming and Competitive Entertainment: The Industry and Your OpportunitiesSign Up"; // double date
+        eventDescript[6] = "Winter Qtr Colloquium CP & WPH lobby";
+        eventDescript[7] = "Connecting the Dots: Safety in Action";
+        eventDescript[8] = "The Rise of Chinese Wine: A Political Economy Story | Grit City Think&Drink";
+        eventDescript[9] = "Winter Undergraduate Student Showcase";
+        eventDescript[10] = "Stand with the Facts: Bots, Trolls and Your Vote";
+        eventDescript[11] = "Buford Park Spring Breakaway";
+        eventDescript[12] = "Buford Park Spring Breakaway";
+        eventDescript[13] = "Buford Park Spring Breakaway";
+        eventDescript[14] = "Buford Park Spring Breakaway";
+        eventDescript[15] = "Buford Park Spring Breakaway"; // double date
+        eventDescript[16] = "2020 Children of Incarcerated Parents Conference"; // double date
+        eventDescript[17] = "Buford Park Spring Breakaway";
+        eventDescript[18] = "IT Mixer (The Swiss)";
+        eventDescript[19] = "Global Competition of Social Messaging Platforms | Grit City Think&Drink";
+
+
+        // event locations respect to eventDescript's array
+        let eventLocation = new Array(20);
+        eventLocation[0] = "UW Ethnic Cultural Center";
+        eventLocation[1] = "UW Tacoma William W. Philip Hall (WPH)";
+        eventLocation[2] = "UW Tacoma Dougan (DOU)";
+        eventLocation[3] = "UW Tacoma William W. Philip Hall (WPH)";
+        eventLocation[4] = "UW Tacoma William W. Philip Hall (WPH)"; // double date 
+        eventLocation[5] = "UW Tacoma Carlton Center (CAR)"; // double date
+        eventLocation[6] = "UW Tacoma William W. Philip Hall (WPH)";
+        eventLocation[7] = "UW Tacoma William W. Philip Hall (WPH)";
+        eventLocation[8] = "The Swiss Restaurant & Pub 1904 South Jefferson";
+        eventLocation[9] = "University Y Student Center";
+        eventLocation[10] = "UW Tacoma William W. Philip Hall (WPH)";
+        eventLocation[11] = "UW Tacoma Mattress Factory (MAT)";
+        eventLocation[12] = "UW Tacoma Mattress Factory (MAT)";
+        eventLocation[13] = "UW Tacoma Mattress Factory (MAT)";
+        eventLocation[14] = "UW Tacoma Mattress Factory (MAT)";
+        eventLocation[15] = "UW Tacoma Mattress Factory (MAT)"; // double date
+        eventLocation[16] = "UW Tacoma William W. Philip Hall (WPH)"; // double date 
+        eventLocation[17] = "UW Tacoma Mattress Factory (MAT)";
+        eventLocation[18] = "N/A";
+        eventLocation[19] = "The Swiss Restaurant & Pub 1904 South Jefferson";
+
+
+        // event dates respect to eventDescript's array
+        let eventDate = new Array(20);
+        eventDate[0] = "2 27 2020";
+        eventDate[1] = "2 28 2020";
+        eventDate[2] = "3 03 2020";
+        eventDate[3] = "3 04 2020";
+        eventDate[4] = "3 05 2020"; // double date
+        eventDate[5] = "3 05 2020"; // double date
+        eventDate[6] = "3 06 2020";
+        eventDate[7] = "3 09 2020";
+        eventDate[8] = "3 10 2020";
+        eventDate[9] = "3 13 2020";
+        eventDate[10] = "3 18 2020";
+        eventDate[11] = "3 21 2020";
+        eventDate[12] = "3 22 2020";
+        eventDate[13] = "3 23 2020";
+        eventDate[14] = "3 24 2020";
+        eventDate[15] = "3 25 2020"; // double date
+        eventDate[16] = "3 25 2020"; // double date
+        eventDate[17] = "3 26 2020";
+        eventDate[18] = "4 03 2020";
+        eventDate[19] = "4 14 2020";
+
+        // event time of the day respect to eventDescript's array
+        let eventTime = new Array(20);
+        eventTime[0] = "5 p.m.";
+        eventTime[1] = "11 a.m.";
+        eventTime[2] = "12:30 p.m.";
+        eventTime[3] = "8:45 a.m.";
+        eventTime[4] = "12 p.m."; // double date
+        eventTime[5] = "12:15 p.m."; // double date
+        eventTime[6] = "10:30 a.m.";
+        eventTime[7] = "8 a.m.";
+        eventTime[8] = "6:30 p.m.";
+        eventTime[9] = "1:30 p.m.";
+        eventTime[10] = "7 p.m.";
+        eventTime[11] = "8 a.m.";
+        eventTime[12] = "8 a.m.";
+        eventTime[13] = "8 a.m.";
+        eventTime[14] = "8 a.m.";
+        eventTime[15] = "8 a.m."; // double date
+        eventTime[16] = "7:30 a.m."; // double date 
+        eventTime[17] = "9 a.m.";
+        eventTime[18] = "5 p.m.";
+        eventTime[19] = "6:30 p.m.";
+
+        // ** might consider doing above into textfile and loop into creating the arrays **
+        //var text = read("UWTacomaEvents");
+        //for (int i = 0; i < 20; i++) {
+        //    eventDate = ;
+        //   eventDescript = ;
+        //    eventLocation = ;
+        //}
+
+        // check current day date and remove the events before those days to keep data up to date
+        var today = new Date();
+        var date = today.getFullYear()+ ' ' +(today.getMonth()+1)+ ' ' +today.getDate(); // 2020-month(1-12)-day(1-31)
+        document.writeln(date + "<br>");
+
+        // array for current dates to display, get value to start the array
+        var startIndex = 0;
+        for (var i = 0; i < 20; i++) {
+            // into token seperated by space
+            var getDate = eventDate[i].split(' '); // format "month day year"
+            // getDate isn't a string or array not printing 
+            var getDay = getDate[1];
+            var getMonth = getDate[0];
+            var getYear = getDate[2];
+            if (getMonth >= (today.getMonth() + 1) && getYear == today.getFullYear()) 
+            { // same month or further month
+                if (getMonth == (today.getMonth()+ 1) && getDay < today.getDate()) { // same month but it's past that day
+
+
+                    document.writeln("Same month but the current day is past the event day");
+                    continue; // or do nothing but continues loop without completing current loop codes pass this line
+                } else { // all future
+                    startIndex = i;
+                    document.writeln("start index: " + startIndex);
+                    break; // stops loop, knowing this start index
+                }
+            } else {
+                continue;
+            }
+            // if reach here, then no more events left
+            document.writeln("Sorry, there are no more events in the near future.");
+        }
+
+        // display a certain amount of events (5-10) and have an option to display all events on database
+        function tableCreate(x) {
+            var body = document.getElementById('events');
+            var tbl = document.createElement('table');
+            tbl.style.width = '33%';
+            tbl.style.float = 'left';
+            tbl.setAttribute('border', '1');
+            var tbdy = document.createElement('tbody');
+
+            var thFirst = document.createElement('th');
+            thFirst.innerHTML = 'Date and Time';
+            var thSec = document.createElement('th');
+            thSec.innerHTML = 'Event';
+            var thThird = document.createElement('th');
+            thThird.innerHTML = 'Location';
+            var tr = document.createElement('tr');
+            tr.style.fontWeight = 'bold';
+            tr.appendChild(thFirst);
+            tr.appendChild(thSec);
+            tr.appendChild(thThird);
+
+            // input first index event
+            var tr2 = document.createElement('tr');
+            var td1 = document.createElement('td');
+            td1.innerHTML = eventDate[x] + " at " + eventTime[x]; // and time 
+            var td2 = document.createElement('td');
+            td2.innerHTML = eventDescript[x];
+            var td3 = document.createElement('td');
+            td3.innerHTML = eventLocation[x];
+            tr2.appendChild(td1);
+            tr2.appendChild(td2);
+            tr2.appendChild(td3);
+
+            tbdy.appendChild(tr);
+            tbdy.appendChild(tr2);
+            tbl.appendChild(tbdy);
+            body.appendChild(tbl);
+        }
+        for (var i = startIndex; i < (startIndex + 5); i++) {
+            tableCreate(i);
+        }
+    
+        // document.writeln("Works");
+        // tableCreate(); // only call when needing to create (the top 5 from most  current event date)
 	</script>
 </body>
 
