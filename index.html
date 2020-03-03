@@ -12,8 +12,8 @@
 	<header>
 		<div>
 			<!--<br>-->
-			<!--<h1 class="welcomeBar">Welcome to the KnowUW Map (UW Tacoma Campus)</h1><br>-->
-            <img id="KnowUWLogo" class="KnowUWLogo"src="KnowUW2.png" alt="KnowUW Logo">
+			<!-- <h1 class="welcomeBar">Welcome to the KnowUW Map (UW Tacoma Campus)</h1><br> -->
+            <img id="KnowUWLogo" class="KnowUWLogo" src="KnowUW2.png" alt="KnowUW Logo">
 		</div>
 	</header>
 	<section>
@@ -34,22 +34,7 @@
             
             <div class="column">
                 <h2>Contact Us</h2>
-                <p class="contactinfo">
-                  <br>
-                  University of Washington Tacoma</p>
-                  <p class="contactinfo">
-                  1900 Commerce Street </p>
-                  <p class="contactinfo">
-                  Tacoma, WA 98402-3100</p>
-                  <p class="contactinfo">
-                  <br>
-                  <strong>Phone:</strong> 253-692-4400 </p>
-                  <p class="contactinfo">
-                  <strong>TDD:</strong> 253-692-4414</p>
-                  <p class="contactinfo">
-                  <br>
-                  <a class="emaillink" href="https://www.tacoma.uw.edu/contact">Send us an email</a></p> <!-- Click to send them to: https://www.tacoma.uw.edu/contact -->
-                  </p>
+                <p>Some text..</p>
             </div>
 
             <div class="column">
@@ -335,53 +320,53 @@
 </body>
 
 
-<!-- THE ABOUT QUICK-VIEW WINDOW, MADE IN NEW BODY TO OVERLAY ALL OTHER ELEMENTS -->
-<body>
-<!-- Trigger/Open The Modal -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2 class="aboutKnowUW">About KnowUW</h2>
-    </div>
-    <div class="modal-body">
-      <p>INFORMATION...</p>
-      <br>
-      <p>INFORMATION...</p>
-      <br>
-      <p>INFORMATION...</p>
-      <br>
-      <p>INFORMATION...</p>
-      <br>
-      <p>INFORMATION...</p>
-      <br>
-      <p>INFORMATION...</p>
-      <br>
-      <p>INFORMATION...</p>
-    </div>
-    <div class="modal-footer">
-        <a class="clickToReadMore" href="https://www.tacoma.uw.edu/about-uw-tacoma/about-university-washington-tacoma" target="_blank">
-            <h3>Click to Read More About UW Tacoma</h3>
-        </a>
-    </div>
-  </div>
+        <!-- THE ABOUT QUICK-VIEW WINDOW, MADE IN NEW BODY TO OVERLAY ALL OTHER ELEMENTS -->
+        <body>
+            <!-- Trigger/Open The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="aboutKnowUW">About KnowUW</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>INFORMATION...</p>
+                        <br>
+                        <p>INFORMATION...</p>
+                        <br>
+                        <p>INFORMATION...</p>
+                        <br>
+                        <p>INFORMATION...</p>
+                        <br>
+                        <p>INFORMATION...</p>
+                        <br>
+                        <p>INFORMATION...</p>
+                        <br>
+                        <p>INFORMATION...</p>
+                    </div>
+                    <div class="modal-footer">
+                    <a class="clickToReadMore" href="https://www.tacoma.uw.edu/about-uw-tacoma/about-university-washington-tacoma" target="_blank">
+                        <h3>Click to Read More About UW Tacoma</h3>
+                    </a>
+                </div>
+            </div>
 
-</div>
-<script>
-var modal = document.getElementById("myModal"); // Call Modal
-var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
-var span = document.getElementsByClassName("close")[0]; // Way to Close Modal
-logo.onclick = function() {
-  modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
-}
-span.onclick = function() {
-  modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
-}
-window.onclick = function(event) { // Or if they Click anywhere Else, it Closes the Modal
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal"); // Call Modal
+            var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
+            var span = document.getElementsByClassName("close")[0]; // Way to Close Modal
+            logo.onclick = function() {
+                modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
+            }
+            span.onclick = function() {
+                modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
+            }
+            window.onclick = function(event) { // Or if they Click anywhere Else, it Closes the Modal
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

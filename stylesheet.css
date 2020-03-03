@@ -14,6 +14,7 @@
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;*/
 } 
+
 .KnowUWLogo{
   display: block;
   margin-left: auto;
@@ -22,10 +23,12 @@
   height: 125px;
   position: relative;
 }
+
 .KnowUWLogo:hover{
   transform: scale(1.1);
   cursor: pointer;
 }
+
 /*#whitneyBlg{
   z-index: 0;
   width: 140px;
@@ -130,6 +133,7 @@ h1{
   border-right: 2px solid gray;
   border-left: 2px solid gray;
 }
+
 .officialsite{
   display: inline-block;
   text-align: center;
@@ -137,6 +141,7 @@ h1{
   margin-left: auto;
   margin-right: auto;
 }
+
 p.contactinfo{
   text-align: center;
 }
@@ -145,6 +150,7 @@ p{
   color: black;
   text-align: left;
 }
+
 .emaillink{
   color: black;
 }
@@ -169,20 +175,24 @@ p{
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
 .modal-header {
   padding: 2px 4px;
   background-color: #4b2e83;
   color: white;
   font-size: 30px;
 }
+
 .modal-footer {
   padding: 2px 16px;
   background-color: #b7a57a;
   color: white;
 }
+
 .modal-body {
   padding: 2px 16px;
 }
+
 .modal-content{
   position: relative;
   background-color: #fefefe;
@@ -196,10 +206,12 @@ p{
   animation-name: topdownanimation;
   animation-duration: 0.4s
 }
+
 @keyframes topdownanimation {
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
 }
+
 @-webkit-keyframes topdownanimation {
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
@@ -426,7 +438,6 @@ a{
   padding-top: 10px;
 }
 
-
 .calendar .days li a:hover{
   background-color: #EEEDE9;
 }
@@ -439,7 +450,6 @@ a{
 .calendar .days li .event{
   color: #F5A1A3;
 }
-
 
 /* placeholder color */
 ::-webkit-input-placeholder {color: #ffffff; }
