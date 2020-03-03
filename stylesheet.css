@@ -131,8 +131,11 @@ h1{
   border-left: 2px solid gray;
 }
 .officialsite{
+  display: inline-block;
   text-align: center;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 p.contactinfo{
   text-align: center;
@@ -151,4 +154,76 @@ p{
   content: "";
   display: table;
   clear: both;
+}
+
+.modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-header {
+  padding: 2px 4px;
+  background-color: #4b2e83;
+  color: white;
+  font-size: 30px;
+}
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #b7a57a;
+  color: white;
+}
+.modal-body {
+  padding: 2px 16px;
+}
+.modal-content{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: topdownanimation;
+  -webkit-animation-duration: 0.4s;
+  animation-name: topdownanimation;
+  animation-duration: 0.4s
+}
+@keyframes topdownanimation {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+@-webkit-keyframes topdownanimation {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.clickToReadMore{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+}
+.aboutKnowUW{
+  text-align: center;
 }
