@@ -31,38 +31,99 @@
 	<!-- The footer with: contacts, other pages, etc. at the bottom of the page -->
 	<footer>
 		<div class="row">
-			<div class="column">
-				<h2>Contact Us</h2>
-				    <p class="contactinfo">
-                    <br>
-                    University of Washington Tacoma</p>
-                    <p class="contactinfo">
-                    1900 Commerce Street </p>
-                    <p class="contactinfo">
-                    Tacoma, WA 98402-3100</p>
-                    <p class="contactinfo">
-                    <br>
-                    <strong>Phone:</strong> 253-692-4400 </p>
-                    <p class="contactinfo">
-                    <strong>TDD:</strong> 253-692-4414</p>
-                    <p class="contactinfo">
-                    <br>
-                    <a class="emaillink" href="https://www.tacoma.uw.edu/contact">Send us an email</a></p> <!-- Click to send them to: https://www.tacoma.uw.edu/contact -->
-                    </p>
-			</div>
+            
+            <div class="column">
+                <h2>Contact Us</h2>
+                <p>Some text..</p>
+            </div>
 
-			<div class="column">
-				<h2>Academic Calender</h2>
-				<p>Some text..</p>
-			</div>
+            <div class="column">
+                <h2>Academic Calender</h2>
+                <p>Some text..</p>
 
-			<div class="column">
-				<h2>Events</h2>
-				<p>Here are the 5 upcoming events:</p>
+                <!-- The calendar development location in a div inside footer seciton: Acaedmic Calendar -->
+                <div class="calendar">
+
+                    <div class="col leftCol">
+                        <div class="content">
+                            <h1 class="date">Friday<span>September 12th</span></h1>
+                            <div class="notes">
+                                <p>
+                                    <input type="text" value="" placeholder="new note"/>
+                                    <a href="#" title="Add note" class="addNote animate">+</a>
+                                </p>
+                                <ul class="noteList">
+                                    <li>Headbutt a lion<a href="#" title="Remove note" class="removeNote animate">x</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col rightCol">
+                        <div class="content">
+                            <h2 class="year">2013</h2>
+                            <ul class="months">
+                                <li><a href="#" title="Jan" data-value="1">Jan</a></li>
+                                <li><a href="#" title="Feb" data-value="2">Feb</a></li>
+                                <li><a href="#" title="Mar" data-value="3">Mar</a></li>
+                                <li><a href="#" title="Apr" data-value="4">Apr</a></li>
+                                <li><a href="#" title="May" data-value="5">May</a></li>
+                                <li><a href="#" title="Jun" data-value="6">Jun</a></li>
+                                <li><a href="#" title="Jul" data-value="7">Jul</a></li>
+                                <li><a href="#" title="Aug" data-value="8">Aug</a></li>
+                                <li><a href="#" title="Sep" data-value="9" class="selected">Sep</a></li>
+                                <li><a href="#" title="Oct" data-value="10">Oct</a></li>
+                                <li><a href="#" title="Nov" data-value="11">Nov</a></li>
+                                <li><a href="#" title="Dec" data-value="12">Dec</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <ul class="weekday">
+                                <li><a href="#" title="Mon" data-value="1">Mon</a></li>
+                                <li><a href="#" title="Tue" data-value="2">Tue</a></li>
+                                <li><a href="#" title="Wed" data-value="3">Wed</a></li>
+                                <li><a href="#" title="Thu" data-value="4">Thu</a></li>
+                                <li><a href="#" title="Fri" data-value="5">Fri</a></li>
+                                <li><a href="#" title="Say" data-value="6">Sat</a></li>
+                                <li><a href="#" title="Sun" data-value="7">Sun</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <ul class="days">
+                                <script>
+                                    for( var _i = 1; _i <= 31; _i += 1 ){
+                                        var _addClass = '';
+                                        if( _i === 12 ){ _addClass = ' class="selected"'; }
+                                        
+                                        switch( _i ){
+                                            case 8:
+                                            case 10:
+                                            case 27:
+                                                _addClass = ' class="event"';
+                                            break;
+                                        }
+
+                                        document.write( '<li><a href="#" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
+                                    }
+                                </script>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <h2>Events</h2>
+                <p>Here are the 5 upcoming events:</p>
+
+                <!-- The table development location in a div inside footer section: Events -->
                 <div id="events">
                 </div>
-			</div>
-		</div>
+
+            </div>
+        </div>
         <div>
 			<a class="officialsite" href="https://www.tacoma.uw.edu/" target="_blank">UWT Official Site</a>
         </div>
@@ -132,7 +193,7 @@
         eventDate[7] = "3 09 2020";
         eventDate[8] = "3 10 2020";
         eventDate[9] = "3 13 2020";
-        eventDate[10] = "3 18 2020";
+        eventDate[10] = "3 18 2020"; 
         eventDate[11] = "3 21 2020";
         eventDate[12] = "3 22 2020";
         eventDate[13] = "3 23 2020";
@@ -166,25 +227,14 @@
         eventTime[18] = "5 p.m.";
         eventTime[19] = "6:30 p.m.";
 
-        // ** might consider doing above into textfile and loop into creating the arrays **
-        //var text = read("UWTacomaEvents");
-        //for (int i = 0; i < 20; i++) {
-        //    eventDate = ;
-        //   eventDescript = ;
-        //    eventLocation = ;
-        //}
-
         // check current day date and remove the events before those days to keep data up to date
         var today = new Date();
-        var date = today.getFullYear()+ ' ' +(today.getMonth()+1)+ ' ' +today.getDate(); // 2020-month(1-12)-day(1-31)
-        document.writeln(date + "<br>");
 
         // array for current dates to display, get value to start the array
         var startIndex = 0;
         for (var i = 0; i < 20; i++) {
             // into token seperated by space
             var getDate = eventDate[i].split(' '); // format "month day year"
-            // getDate isn't a string or array not printing 
             var getDay = getDate[1];
             var getMonth = getDate[0];
             var getYear = getDate[2];
@@ -197,7 +247,6 @@
                     continue; // or do nothing but continues loop without completing current loop codes pass this line
                 } else { // all future
                     startIndex = i;
-                    document.writeln("start index: " + startIndex);
                     break; // stops loop, knowing this start index
                 }
             } else {
@@ -209,48 +258,64 @@
 
         // display a certain amount of events (5-10) and have an option to display all events on database
         function tableCreate(x) {
-            var body = document.getElementById('events');
+            var body = document.getElementById('events'); // called it body but is events div
             var tbl = document.createElement('table');
-            tbl.style.width = '33%';
+            //tbl.style.width = '450px';
             tbl.style.float = 'left';
-            tbl.setAttribute('border', '1');
+            //tbl.setAttribute('border', '1');
             var tbdy = document.createElement('tbody');
 
+            // create header row of table
             var thFirst = document.createElement('th');
             thFirst.innerHTML = 'Date and Time';
+            thFirst.style.color = 'white';
+            thFirst.style.width = '120px';
+            //thFirst.style.textAlign = 'left';
             var thSec = document.createElement('th');
             thSec.innerHTML = 'Event';
+            thSec.style.color = 'white';
+            //thSec.style.textAlign = 'left';
             var thThird = document.createElement('th');
             thThird.innerHTML = 'Location';
+            thThird.style.color = 'white';
+            //thThird.style.textAlign = 'left';
             var tr = document.createElement('tr');
+            tr.style.backgroundColor = '#4b2e83';
             tr.style.fontWeight = 'bold';
             tr.appendChild(thFirst);
             tr.appendChild(thSec);
             tr.appendChild(thThird);
 
-            // input first index event
+            // create table info
             var tr2 = document.createElement('tr');
+            tr2.style.backgroundColor = "#fcebbd";
             var td1 = document.createElement('td');
             td1.innerHTML = eventDate[x] + " at " + eventTime[x]; // and time 
+            td1.style.textAlign = 'left';
             var td2 = document.createElement('td');
             td2.innerHTML = eventDescript[x];
+            td2.style.textAlign = 'left';
             var td3 = document.createElement('td');
             td3.innerHTML = eventLocation[x];
+            td3.style.textAlign = 'left';
             tr2.appendChild(td1);
             tr2.appendChild(td2);
             tr2.appendChild(td3);
 
+            // append everything into the body/event Div
             tbdy.appendChild(tr);
             tbdy.appendChild(tr2);
             tbl.appendChild(tbdy);
             body.appendChild(tbl);
         }
+
+        // loop to create the 5 most recent events based off current date
         for (var i = startIndex; i < (startIndex + 5); i++) {
             tableCreate(i);
         }
-    
-        // document.writeln("Works");
-        // tableCreate(); // only call when needing to create (the top 5 from most  current event date)
+
+        // Jan 6 - March 20 = Winter 2020 array (startIndex to indexOf(10))
+        // March 30 - June 15 = Spring 2020 (indexOf(11) to indexOf(19))
 	</script>
 </body>
 
