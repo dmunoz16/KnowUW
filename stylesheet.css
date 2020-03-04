@@ -287,12 +287,12 @@ a{
 }
 
 
-/* Calendar CSS */
+/* start of Calendar CSS */
 .calendar{
   border-radius: 4px;
   overflow: hidden;
   width: 100%;
-  height: 450px;
+  height: 435px;
   background-color: #ffffff;
   color: #333333;
 }
