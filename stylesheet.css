@@ -39,8 +39,8 @@
   /*-webkit-max-width: 80%;
   -webkit-max-height: 100%;
   -webkit-min-width: 100%;
-  -webkit-min-height: 100px;*/
-}
+  -webkit-min-height: 100px;
+}*/
 
 /*#whitneyBlg:hover{
   transform: scale(1.2);
@@ -458,3 +458,88 @@ a{
 :-ms-input-placeholder {color: #ffffff; }
 
 /* end of Calendar CSS */
+
+/* Beginning of base.css for the slider */
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+/*body {
+  background-color: #979797;
+  color: #fff;
+  margin: 0;
+  padding: 0;}*/
+
+.page {
+  max-width: 640px;
+  margin: 0 auto 30px auto;}
+
+.panel {
+  background-color: #fff;
+  color: #666;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: auto;}
+
+button {
+  border: none;}
+
+/********** LOGO **********/
+
+
+/********** TYPOGRAPHY **********/
+
+
+  /*****************  No JS ***************/
+#billboard {text-align: center;}
+.js-warning {display: none;}
+
+.no-js .js-warning {
+  display: block;
+  border: 3px solid #fff;
+  text-align: center;
+  background-color: #fff;
+  color: #db5391;
+  padding: 10px;}
+/* END of base.css */
+
+/* Beginning slider.css */
+/********** SLIDER **********/
+.slider {
+  max-width: 940px;
+  margin: 0px auto 30px auto;}
+
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    height: 800px;}
+    /* 430px is orginal */
+
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;}
+
+.slide:first-child {
+    display: block;}
+
+
+/********** BUTTONS **********/
+.slide-buttons {
+  text-align: center;}
+
+.slide-btn {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 200%;
+  line-height: 0.5em;}
+
+.slide-btn.active, .slide-btn:hover {
+  color: #4b2e83;
+  cursor: pointer;}
+  /* END of slider.css */
