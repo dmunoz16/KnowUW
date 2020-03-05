@@ -153,6 +153,11 @@ p{
 
 .emaillink{
   color: black;
+  
+}
+.emaillink:hover{
+  color:#4b2e83;
+
 }
 
 /* Clear floats after the columns */
