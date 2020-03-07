@@ -56,6 +56,11 @@
 	float: right;
 }*/
 
+html{
+  background: rgb(44,20,89);
+  background: linear-gradient(0deg, rgba(44,20,89,1) 45%, rgba(75,46,131,1) 100%);
+}
+
 /*Header CSS*/
 header {
   margin: 0;
@@ -66,9 +71,11 @@ header {
   z-index: -1;
 }
 .KnowUWLogo{
+  position: absolute;
   top: 0%;
   left: 0%;
   width: 150px;
+  animation: fadeIn ease 3s;
 }
 .KnowUWLogo:hover{
   transform: scale(1.1);
@@ -95,14 +102,17 @@ body {
   width: max-content;
 	max-width: 80%;
 	max-height: 100%;
-  animation: fadeIn ease 5s;
+  animation: fadeIn ease 3s;
   z-index: 1;
-  box-shadow: 0px 0px 15px #4b2e83;
+  box-shadow: 0px 0px 15px #100329;
   padding: 0px;
   /*-webkit-animation: fadeIn ease 4s;
   -moz-animation: fadeIn ease 4s;
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;*/
+}
+#campusnight{
+  animation: fadeIn ease 3s;
 }
 
 @keyframes fadeIn{
@@ -152,7 +162,9 @@ footer {
 }
 
 .officialsite{
-  display: inline-block;
+  padding-bottom: 10px;
+  display: block;
+  position: relative;
   text-align: center;
   color: white;
   margin-left: auto;
