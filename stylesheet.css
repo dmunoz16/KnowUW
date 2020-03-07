@@ -66,11 +66,9 @@ header {
   z-index: -1;
 }
 .KnowUWLogo{
-  position: absolute;
   top: 0%;
   left: 0%;
   width: 150px;
-  animation: fadeIn ease 3s;
 }
 .KnowUWLogo:hover{
   transform: scale(1.1);
@@ -97,7 +95,7 @@ body {
   width: max-content;
 	max-width: 80%;
 	max-height: 100%;
-  animation: fadeIn ease 3s;
+  animation: fadeIn ease 5s;
   z-index: 1;
   box-shadow: 0px 0px 15px #4b2e83;
   padding: 0px;
@@ -105,9 +103,6 @@ body {
   -moz-animation: fadeIn ease 4s;
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;*/
-}
-#campusnight{
-  animation: fadeIn ease 3s;
 }
 
 @keyframes fadeIn{
@@ -570,3 +565,19 @@ button {
   cursor: pointer;
 }
 /* End of buttons CSS */
+
+
+/* Science Building Page and other building pages */
+.sideBar {
+  background-color: purple;
+  width: 155px;
+  float:left;
+}
+
+.bodySpecial {
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+}
