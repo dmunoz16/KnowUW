@@ -117,7 +117,7 @@ body {
 
 /*Footer CSS*/
 footer {
-  background-color: #85754d;
+  background-color: #4b2e83;
   color: white;
   vertical-align: bottom;
   padding: 5px;
@@ -127,15 +127,29 @@ footer {
   box-sizing: border-box;
 }
 
+.row {
+  display: table;
+  width: 100%;
+}
 .column {
-  float: left;
-  width: 33.33%;
+  display: table-cell;
+  background-color: #ffffff;
   padding: 10px;
-  background-color: white;
-  color: rgb(67, 67, 182);
+  color: #4b2e83;
   text-align: center;
-  border-right: 2px solid gray;
-  border-left: 2px solid gray;
+}
+
+#FirstColumn {
+  width: 25%;
+  border-right: 3px solid #85754d;
+}
+#SecondColumn {
+  background-color: #ffffff;
+  width: 37.5%;
+  border-right: 3px solid #85754d;
+}
+#ThirdColumn {
+  width: 37.5%;
 }
 
 .officialsite{

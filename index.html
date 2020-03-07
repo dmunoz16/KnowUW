@@ -21,7 +21,7 @@
 
 	<section>
 		<div>
-      <img id="backgroundImg" src="FullScreenMap.svg" alt="UW Tacoma campus map">
+      <img id="backgroundImg" src="CampusMap.jpg" alt="UW Tacoma campus map">
   		<!--<map name="campusmapclicks">
   			<area shape="rect" coords="0,0,82,126" href="" alt="whitney">
   		</map>-->
@@ -36,9 +36,8 @@
 		<div class="row">
 
             <!-- Contacts Section -->
-            <div class="column">
+            <div class="column" id="FirstColumn">
                 <h2>Contact Us</h2>
-                <br>
                 <p class="contactinfo">
                   University of Washington Tacoma
                 </p>
@@ -62,8 +61,8 @@
             </div>
 
             <!-- Academic Calendar Section -->
-            <div class="column">
-                <h2>Academic Calender</h2>
+            <div class="column" id="SecondColumn">
+                <h2>Academic Calendar</h2>
 
                 <!-- The calendar development location in a div inside footer seciton: Acaedmic Calendar -->
                 <div class="calendar">
@@ -191,7 +190,7 @@
 
             </div>
 
-            <div class="column">
+            <div class="column" id="ThirdColumn">
                 <h2>Events</h2>
                 <p>Here are the 5 upcoming events:</p>
 
@@ -455,7 +454,7 @@
 
             // create table info
             var tr2 = document.createElement('tr');
-            tr2.style.backgroundColor = "#fcebbd";
+            tr2.style.backgroundColor = "#ffffff";
             var td1 = document.createElement('td');
             td1.innerHTML = eventDate[x] + " at " + eventTime[x]; // and time 
             td1.style.textAlign = 'left';
