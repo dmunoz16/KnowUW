@@ -75,7 +75,7 @@ header {
   top: 0%;
   left: 0%;
   width: 150px;
-  animation: fadeIn ease 3s;
+  animation: fadeIn ease 5s;
 }
 .KnowUWLogo:hover{
   transform: scale(1.1);
@@ -102,7 +102,7 @@ body {
   width: max-content;
 	max-width: 80%;
 	max-height: 100%;
-  animation: fadeIn ease 3s;
+  animation: fadeIn ease 5s;
   z-index: 1;
   box-shadow: 0px 0px 15px #100329;
   padding: 0px;
@@ -112,7 +112,7 @@ body {
   -ms-animation: fadeIn ease 4s;*/
 }
 #campusnight{
-  animation: fadeIn ease 3s;
+  animation: fadeIn ease 5s;
 }
 
 @keyframes fadeIn{
@@ -241,7 +241,9 @@ p{
   animation-name: topdownanimation;
   animation-duration: 0.4s
 }
-
+#a6795{
+    cursor: pointer;
+}
 @keyframes topdownanimation {
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}

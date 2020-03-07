@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -8223,9 +8222,9 @@ ir//2Q==
      y="0.5633803" />
   <a
      id="a6795"
-     xlink:href="#myModal"
-     target="_blank"
-     xlink:title="University YMCA Center">
+     xlink:title="University YMCA Center"
+     style="cursor: pointer;"
+     >
     <path
        onmouseout="this.style.opacity=0"
        onmouseover="this.style.opacity=1"
