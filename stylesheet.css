@@ -1,4 +1,60 @@
-/*Unused CSS
+
+/*Header Style*/
+header {
+    margin-top: 0px;
+    padding: 0;
+}
+
+.title {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    background: center top no-repeat url(Wsnow.jpg);
+    background-size: contain;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-heading {
+  text-align: center;
+  background: rgb(128, 128, 128, 0.5); 
+  animation-name: animation1;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  font-size: 5vw;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes animation1 {
+    0% {
+        opacity: 0;
+        font-size: 2vw;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/**/
+#backgroundImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+	max-width: 80%;
+	max-height: 100%;
+  animation: fadeIn ease 5s;
+  z-index: 1;
+  box-shadow: 0px 0px 15px #4b2e83;
+  padding: 0px;
+  /*-webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;*/
+} 
+
 .KnowUWLogo{
   display: block;
   margin-left: auto;
@@ -7,7 +63,13 @@
   height: 125px;
   position: relative;
 }
-#whitneyBlg{
+
+.KnowUWLogo:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*#whitneyBlg{
   z-index: 0;
   width: 140px;
   top: 108px;
@@ -18,13 +80,40 @@
   -webkit-max-height: 100%;
   -webkit-min-width: 100%;
   -webkit-min-height: 100px;
-}
+}*/
 
-#whitneyBlg:hover{
+/*#whitneyBlg:hover{
   transform: scale(1.2);
   cursor: pointer;
   animation: fadeIn ease 5s;
+}*/
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #4b2e83;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #85754d;
+  color: white;
+  vertical-align: bottom;
+  padding: 5px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -60,73 +149,14 @@
 #uwLogo {
 	height: 40px;
 	float: right;
-}*/
+}
 
-/*Header CSS*/
-header {
-  margin: 0;
-  padding: 0;
-}
-.background{
-  position: relative;
-  z-index: -1;
-}
-.KnowUWLogo{
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 150px;
-}
-.KnowUWLogo:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-}
 
 h1{
   text-align: center;
   color: white;
   margin: 0;
   padding: 0;
-}
-
-/*Body*/
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#backgroundImg{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: max-content;
-	max-width: 80%;
-	max-height: 100%;
-  animation: fadeIn ease 5s;
-  z-index: 1;
-  box-shadow: 0px 0px 15px #4b2e83;
-  padding: 0px;
-  /*-webkit-animation: fadeIn ease 4s;
-  -moz-animation: fadeIn ease 4s;
-  -o-animation: fadeIn ease 4s;
-  -ms-animation: fadeIn ease 4s;*/
-}
-
-@keyframes fadeIn{
-  0%{
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*Footer CSS*/
-footer {
-  background-color: #85754d;
-  color: white;
-  vertical-align: bottom;
-  padding: 5px;
 }
 
 * {
@@ -177,6 +207,7 @@ p{
   clear: both;
 }
 
+/* Navigation interactive CSS */
 .modal{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -254,53 +285,7 @@ p{
 .aboutKnowUW{
   text-align: center;
 }
-
-/* Code for Calendar below
-   Source: https://codepen.io/alexoliverwd/pen/bHhBI */
-/* not required */
-*,:active{
-  outline: none;
-}
-*{
-  padding: 0px;
-  margin: 0px;
-}
-
-body{
-  background-color: #EEEDE9;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-size: 96.5%;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-input{
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, p{
-  margin-bottom: 10px;
-}
-
-p{
-  line-height: 20px;
-}
-
-a{
-  text-decoration: none;
-  color: #FF462B;
-}
-
-.clearfix{
-  clear: both;
-}
-
-.animate{
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
+/* End of Navigation interaction css */
 
 /* start of Calendar CSS */
 .calendar{
@@ -345,6 +330,37 @@ a{
 .calendar .leftCol{
   width: 40%;
   background-color: #4b2e83;
+}
+
+/* Minimize Button */
+.styled {
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+/* Minimize Button */
+.styled:hover {
+    background-color: purple;
+}
+/* Minimize Button */
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 .calendar .noteList li{
@@ -465,14 +481,13 @@ a{
 .calendar .days li .event{
   color: #F5A1A3;
 }
-
 /* placeholder color */
 ::-webkit-input-placeholder {color: #ffffff; }
 :-moz-placeholder {color: #ffffff; }
 ::-moz-placeholder {color: #ffffff; }
 :-ms-input-placeholder {color: #ffffff; }
-
 /* end of Calendar CSS */
+
 
 /* Beginning of base.css for the slider */
 @import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
@@ -503,7 +518,7 @@ button {
 /********** TYPOGRAPHY **********/
 
 
-  /*****************  No JS ***************/
+/*****************  No JS ***************/
 #billboard {text-align: center;}
 .js-warning {display: none;}
 
@@ -519,28 +534,38 @@ button {
 /* Beginning slider.css */
 /********** SLIDER **********/
 .slider {
-  max-width: 940px;
-  margin: 0px auto 30px auto;}
+  max-width: 800px;
+  margin: 0px auto 30px auto;
+}
 
 .slide-viewer {
     position: relative; /* needed for IE7 */
     overflow: hidden;
-    height: 800px;}
-    /* 430px is orginal */
+    height: 500px;
+  }
+  /* 430px is orginal */
 
 .slide-group {
-    width: 100%;
-    height: 100%;
-    position: relative;}
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 .slide {
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: absolute;}
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
 
 .slide:first-child {
-    display: block;}
+  display: block;
+}
+
+.slideImg {
+  width: 100%;
+}
+
 
 
 /********** BUTTONS **********/
@@ -561,5 +586,5 @@ button {
 
 #a6795:hover{
   cursor: pointer;
-
 }
+/* End of buttons CSS */
