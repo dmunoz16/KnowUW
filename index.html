@@ -20,20 +20,8 @@
     </div>
   </header>
 
-	<section>
-		<div>
-      		<!-- <img id="backgroundImg" src="CampusMap.jpg" alt="UW Tacoma campus map"> -->
-      		<object id="backgroundImg" type="image/svg+xml" data="FullScreenMap.svg">
+    <object id="backgroundImg" type="image/svg+xml" data="FullScreenMap.svg">
       		</object>
-  		<!--<map name="campusmapclicks">
-  			<area shape="rect" coords="0,0,82,126" href="" alt="whitney">
-  		</map>-->
-  		<!--<img id="whitneyBlg" src="Whitney.png" alt="Whitney Building">-->
-  		<!--<map id="whitneybuilding">
-  			<area class="whitneybldg"shape="rect" coords="0,0,82,126" alt="left" href="">
-  		</map>-->
-    </div>
-	</section>
 	<!-- The footer with: contacts, other pages, etc. at the bottom of the page -->
 	<footer>
 		<div class="row">
@@ -528,23 +516,25 @@
         </a>
       </div>
     </div>
-
   </div>
-
-<svg id="a6795">
-	<use xlink:href="FullScreenMap.svg#a6795"></use>
-</svg>
 
   <script>
 
+		var a = document.getElementById("backgroundImg");
+			a.addEventListener("load", function(){
+				var svgDoc = a.contentDocument;
+    			var svgDocWhole = svgDoc.getElementById("svg6232");
+    			var svgDocYMCA = svgDocWhole.getElementById("a6795");
+			});
+
     var modal = document.getElementById("myModal"); // Call Modal
-    var map = document.getElementById("backgroundImg");
+    var map = document.getElementById("ymca_bldg");
     var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
     var span = document.getElementsByClassName("close")[0]; // Way to Close Modal
     logo.onclick = function() {
       modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
     }
-    map.onclick = function() {
+    svgDocYMCA.onclick = function() {
       modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
     }
     span.onclick = function() {
