@@ -594,3 +594,15 @@ button {
   background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
   background: linear-gradient(45deg, #4158d0, #c850c0);
 }
+
+.infobox{
+border: 1px solid white;
+width: 500px;
+margin: auto;
+  width: 40%;
+  padding: 5px;
+  background-color: white;
+
+
+
+}
