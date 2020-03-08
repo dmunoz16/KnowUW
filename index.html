@@ -5,6 +5,7 @@
     <meta charset="utf-8"/>
     <!-- external css file -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link href="FullScreenMap.svg" rel="import">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <title>KnowUW</title>
 </head>
@@ -204,7 +205,7 @@
         </div>
         <div>
         	<br>
-			<a class="officialsite" href="https://www.tacoma.uw.edu/" target="_blank">UWT Official Site</a>
+			<a id="officialsite" class="officialsite" href="https://www.tacoma.uw.edu/" target="_blank">UWT Official Site</a>
         </div>
 	</footer>
 
@@ -529,7 +530,13 @@
     </div>
 
   </div>
+
+<svg id="a6795">
+	<use xlink:href="FullScreenMap.svg#a6795"></use>
+</svg>
+
   <script>
+
     var modal = document.getElementById("myModal"); // Call Modal
     var map = document.getElementById("backgroundImg");
     var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
