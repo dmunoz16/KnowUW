@@ -318,11 +318,19 @@ p {
 /* End of Navigation interaction css */
 
 /* start of Calendar CSS */
+#huskyHead {
+  width: 100px;
+  float: right;
+  margin-right: 15px;
+}
+
 .calendar {
 	border-radius: 4px;
 	overflow: hidden;
 	width: 100%;
 	height: 435px;
+	max-height: 435px;
+  	max-width: 925px;
 	background-color: #ffffff;
 	color: #333333;
 }

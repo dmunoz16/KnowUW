@@ -50,11 +50,18 @@
                 <h2>Academic Calendar</h2>
 
                 <!-- The calendar development location in a div inside footer seciton: Acaedmic Calendar -->
+                <div class="column" id="SecondColumn">
+                <h2>Academic Calendar</h2>
+
+                <!-- The calendar development location in a div inside footer seciton: Acaedmic Calendar -->
                 <div class="calendar">
 
                     <div class="col leftCol">
-                        <div>
+                        <div id="topCalStuff">
                             <button class="favorite styled" type="button" onclick=minFunction()>Minimize</button>
+                        </div>
+                        <div>
+                            <img id="huskyHead" src="https://sportslogohistory.com/wp-content/uploads/2018/01/washington_huskies_1995-2000.png" alt="Husky Logo">
                         </div>
                         <div class="content">
                             <h1 class="date"></h1>
@@ -75,18 +82,90 @@
                             <h2 class="year"></h2>
                             <!-- all clickable b/c of href therefore all going to the top page -->
                             <ul class="months">
-                                <li><a href="#" title="Jan" data-value="1">Jan</a></li>
-                                <li><a href="#" title="Feb" data-value="2">Feb</a></li>
-                                <li><a href="#" title="Mar" data-value="3" class="selected">Mar</a></li>
-                                <li><a href="#" title="Apr" data-value="4">Apr</a></li>
-                                <li><a href="#" title="May" data-value="5">May</a></li>
-                                <li><a href="#" title="Jun" data-value="6">Jun</a></li>
-                                <li><a href="#" title="Jul" data-value="7">Jul</a></li>
-                                <li><a href="#" title="Aug" data-value="8">Aug</a></li>
-                                <li><a href="#" title="Sep" data-value="9">Sep</a></li>
-                                <li><a href="#" title="Oct" data-value="10">Oct</a></li>
-                                <li><a href="#" title="Nov" data-value="11">Nov</a></li>
-                                <li><a href="#" title="Dec" data-value="12">Dec</a></li>
+                                <li><a id='monthID1' href="javascript:;" onclick="changeMonth(1)" title="Jan" data-value="1">Jan</a></li>
+                                <li><a id='monthID2' href="javascript:;" onclick="changeMonth(2)" title="Feb" data-value="2">Feb</a></li>
+                                <li><a id='monthID3' href="javascript:;" onclick="changeMonth(3)" title="Mar" data-value="3" class="selected">Mar</a></li>
+                                <li><a id='monthID4' href="javascript:;" onclick="changeMonth(4)" title="Apr" data-value="4">Apr</a></li>
+                                <li><a id='monthID5' href="javascript:;" onclick="changeMonth(5)" title="May" data-value="5">May</a></li>
+                                <li><a id='monthID6' href="javascript:;" onclick="changeMonth(6)" title="Jun" data-value="6">Jun</a></li>
+                                <li><a id='monthID7' href="javascript:;" onclick="changeMonth(7)" title="Jul" data-value="7">Jul</a></li>
+                                <li><a id='monthID8' href="javascript:;" onclick="changeMonth(8)" title="Aug" data-value="8">Aug</a></li>
+                                <li><a id='monthID9' href="javascript:;" onclick="changeMonth(9)" title="Sep" data-value="9">Sep</a></li>
+                                <li><a id='monthID10' href="javascript:;" onclick="changeMonth(10)" title="Oct" data-value="10">Oct</a></li>
+                                <li><a id='monthID11' href="javascript:;" onclick="changeMonth(11)" title="Nov" data-value="11">Nov</a></li>
+                                <li><a id='monthID12' href="javascript:;" onclick="changeMonth(12)" title="Dec" data-value="12">Dec</a></li>
+
+                                <script>
+                                    // change month click function
+                                    function changeMonth(x) {
+                                        // change currentDay class to no class if not event class
+                                        var currentMonth = document.getElementsByClassName('selected')[0];
+                                        currentMonth.classList.remove('selected');
+                                        var newClickMonth = document.getElementById('monthID' + x);
+                                        newClickMonth.classList.add('selected');
+
+                                        // need to change days of the month and events on those days
+                                        changeMonthPart2(x);
+                                    }
+
+                                    let eventDate2 = new Array(20);
+                                        eventDate2[0] = "2 27 2020";
+                                        eventDate2[1] = "2 28 2020";
+                                        eventDate2[2] = "3 3 2020";
+                                        eventDate2[3] = "3 4 2020";
+                                        eventDate2[4] = "3 5 2020"; // double date
+                                        eventDate2[5] = "3 5 2020"; // double date
+                                        eventDate2[6] = "3 6 2020";
+                                        eventDate2[7] = "3 9 2020";
+                                        eventDate2[8] = "3 10 2020";
+                                        eventDate2[9] = "3 13 2020";
+                                        eventDate2[10] = "3 18 2020"; 
+                                        eventDate2[11] = "3 21 2020";
+                                        eventDate2[12] = "3 22 2020";
+                                        eventDate2[13] = "3 23 2020";
+                                        eventDate2[14] = "3 24 2020";
+                                        eventDate2[15] = "3 25 2020"; // double date
+                                        eventDate2[16] = "3 25 2020"; // double date
+                                        eventDate2[17] = "3 26 2020";
+                                        eventDate2[18] = "4 03 2020";
+                                        eventDate2[19] = "4 14 2020";
+
+                                    // remake the days after chosing diff month
+                                    function changeMonthPart2(x) {
+                                        var daysDiv = document.getElementsByClassName('days')[0];
+                                        daysDiv.innerHTML = '';
+                                        for( var _i = 1; _i <= daysInMonth[x - 1] ; _i++) {
+                                            var _addClass = '';
+                                            for (var i = 0; i < 20; i++)
+                                            {
+                                                var splitDate1 = eventDate2[i].toString();
+                                                splitDate1.split(" ");
+
+                                                if (splitDate1[0] == x && _i == splitDate[1])
+                                                {
+                                                    _addClass = 'event';
+                                                    break;
+                                                }
+                                            }
+                                            // documente.write is not working here or in days.script
+                                            //var stringThis = '<li><a id= "dayCal' + _i + '" title="'+_i+'" data-value="'+_i+'" onclick ="changeEvent(' + _i + ')"'+_addClass+'>'+_i+'</a></li>';
+                                            var createLi = document.createElement('li');
+                                            var createA = document.createElement('a');
+                                            createA.id = ('dayCal' + _i);
+                                            createA.title = _i;
+                                            createA.dataValue = _i; // works
+                                            //createA.onclick = changeEvent(_i);
+                                            if (_addClass.length > 0) {
+                                                createA.classList.add(_addClass);
+                                            }
+                                            createA.innerHTML = _i;
+                                            createLi.append(createA);
+                                            daysDiv.append(createLi);
+                                            //document.write(createA.dataValue);
+                                        }
+                                    }
+
+                                </script>
                             </ul>
                             <div class="clearfix"></div>
 
@@ -124,6 +203,28 @@
                                     var currentDay = today.getDate();
                                     var ulList = document.getElementsByClassName('days')[0];
                                     // loop once for initial loadup
+                                    let eventDate1 = new Array(20);
+                                        eventDate1[0] = "2 27 2020";
+                                        eventDate1[1] = "2 28 2020";
+                                        eventDate1[2] = "3 3 2020";
+                                        eventDate1[3] = "3 4 2020";
+                                        eventDate1[4] = "3 5 2020"; // double date
+                                        eventDate1[5] = "3 5 2020"; // double date
+                                        eventDate1[6] = "3 6 2020";
+                                        eventDate1[7] = "3 9 2020";
+                                        eventDate1[8] = "3 10 2020";
+                                        eventDate1[9] = "3 13 2020";
+                                        eventDate1[10] = "3 18 2020"; 
+                                        eventDate1[11] = "3 21 2020";
+                                        eventDate1[12] = "3 22 2020";
+                                        eventDate1[13] = "3 23 2020";
+                                        eventDate1[14] = "3 24 2020";
+                                        eventDate1[15] = "3 25 2020"; // double date
+                                        eventDate1[16] = "3 25 2020"; // double date
+                                        eventDate1[17] = "3 26 2020";
+                                        eventDate1[18] = "4 03 2020";
+                                        eventDate1[19] = "4 14 2020";
+
                                     for( var _i = 1; _i <= daysInMonth[today.getMonth()] ; _i++) {
                                         var _addClass = '';
                                         //var _addClassNew = document.createElement('li');
@@ -133,37 +234,52 @@
                                             //_addClassNew.className = 'selected'; // not sure if this is correct
                                             currentDay = _i;
                                         }
-                                        // indicate what days have events
-                                        switch( _i ){
-                                            case 8:
-                                            case 10:
-                                            case 27:
+                                        for (var i = 0; i < 20; i++)
+                                        {
+                                            var splitDate = eventDate1[i].split(' ');
+                                            if (splitDate[0] == (today.getMonth() + 1) && _i == splitDate[1])
+                                            {
                                                 _addClass = ' class="event"';
-                                                //_addClassNew.className = 'event'; // not sure if this is correct
-                                            break;
+                                                break;
+                                            }
                                         }
-                                        document.write( '<li><a href="#" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
-                                        //_addClassNew.title = _i;
-                                        //_addClassNew.dataValue = _i;
-                                        //ulList.appendChild(_addClassNew); // or maybe just append
-                                    }
-                                    // function that creates days and updated with currentDay
-                                    function createDays() {
+                                        
+                                        document.write( '<li><a id= "dayCal' + _i + '" title="'+_i+'" data-value="'+_i+'" onclick ="changeEvent(' + _i + ')"'+_addClass+'>'+_i+'</a></li>' );
                                     }
 
-                                    // interact and update currentDay when clicked
-                                    // make sure it's scope in days not months or other div elements
-                                    $('li').click(function(event) {
-                                        document.writeln("hi");
-                                        // remove selected class then conver to event class to currentDay
-                                        // try to replace by adding instead of remove then add
-                                        document.writeln(event.data("value"));
-                                        //document.getElementsByTagName('a').dataValue[currentDay].className = "event";
-                                        //currentDay = event.dataValue;
-                                        // remove event class then add selected class
+                                    
 
-                                        // for loop that'll go back into what created the first day CSS design
-                                    });
+                                    // interactive clicking on days on calendar
+                                    function changeEvent(x) {
+                                        // change currentDay class to no class if not event class
+                                        var currentDayLi = document.getElementsByClassName('selected')[1];
+                                        //currentDayLi.className = ''; same as .classList.remove()
+
+                                        // see if before click selected is an event
+                                        for (var i = 0; i < 20; i++)
+                                        {
+                                            var splitDate = eventDate1[i].split(' ');
+                                            if (splitDate[0] == (today.getMonth() + 1) && currentDayLi == splitDate[1]) // change if change month
+                                            {
+                                                currentDayLi.classList.add('event');
+                                            }
+                                        }
+                                        currentDayLi.classList.remove('selected'); // but its always 1 b/c always 2 selected
+                                        // new select date for current click day
+                                        var getCurrentDay = document.getElementById('dayCal' + x);
+                                        getCurrentDay.classList.add('selected');
+                                        // if u do getCurrentDay.ClassName = 'selected';, it'll remove the previous shits
+                                        createEventCal(x);
+                                        var classLength = getCurrentDay.classList;
+
+                                        // returns and makes sure font color are correct when selecting an deselecting
+                                        if (classLength == 'event selected') {
+                                            getCurrentDay.style.color = 'white';
+                                        } 
+                                        if (currentDayLi.classList == 'event') {
+                                            currentDayLi.style.color = '#F5A1A3';
+                                        }
+                                    }
                                 </script>
                             </ul>
                             <div class="clearfix"></div>
@@ -193,7 +309,6 @@
 
 	<!-- external javascript file -->
 	<script>
-
         // check current day date and remove the events before those days to keep data up to date
         var today = new Date();
 
@@ -203,11 +318,14 @@
         document.getElementsByClassName("calendar")[0].addEventListener("mouseenter", function() {
              //change size of calendar to 200-400% of current size, include animation
             var getCalendar = document.getElementsByClassName("calendar")[0];
-            getCalendar.style.width = '200%';
+            getCalendar.style.width = '195%';
             getCalendar.style.height = '555px';
             // change minimize button size
             var getMinButton = document.getElementsByClassName("styled")[0];
             getMinButton.style.fontSize = '14px';
+            // fix location of The Day's Date
+            var getLeftColTitle = document.getElementsByClassName("content")[0];
+            getLeftColTitle.style.marginTop = '60px';
 
 
         });
@@ -219,6 +337,7 @@
             // change minimize button size
             var getMinButton = document.getElementsByClassName("styled")[0];
             getMinButton.style.fontSize = '10px';
+            //getCalendar[0].style.display = 'none';
         }
 
 
@@ -270,12 +389,6 @@
         document.getElementsByClassName('year')[0].innerHTML = today.getFullYear();
 
 
-
-
-
-
-
-
     // source: https://www.tacoma.uw.edu/calendar/calendar#/?i=17
         // create array to keep all event information (updated on events on 2/27/2020)
         // event descriptions
@@ -294,9 +407,9 @@
         eventDescript[11] = "Buford Park Spring Breakaway";
         eventDescript[12] = "Buford Park Spring Breakaway";
         eventDescript[13] = "Buford Park Spring Breakaway";
-        eventDescript[14] = "Buford Park Spring Breakaway";
+        eventDescript[14] = "Buford Park Spring Breakaway"; // double date
         eventDescript[15] = "Buford Park Spring Breakaway"; // double date
-        eventDescript[16] = "2020 Children of Incarcerated Parents Conference"; // double date
+        eventDescript[16] = "2020 Children of Incarcerated Parents Conference";
         eventDescript[17] = "Buford Park Spring Breakaway";
         eventDescript[18] = "IT Mixer (The Swiss)";
         eventDescript[19] = "Global Competition of Social Messaging Platforms | Grit City Think&Drink";
@@ -330,12 +443,12 @@
         let eventDate = new Array(20);
         eventDate[0] = "2 27 2020";
         eventDate[1] = "2 28 2020";
-        eventDate[2] = "3 03 2020";
-        eventDate[3] = "3 04 2020";
-        eventDate[4] = "3 05 2020"; // double date
-        eventDate[5] = "3 05 2020"; // double date
-        eventDate[6] = "3 06 2020";
-        eventDate[7] = "3 09 2020";
+        eventDate[2] = "3 3 2020";
+        eventDate[3] = "3 4 2020";
+        eventDate[4] = "3 5 2020"; // double date
+        eventDate[5] = "3 5 2020"; // double date
+        eventDate[6] = "3 6 2020";
+        eventDate[7] = "3 9 2020";
         eventDate[8] = "3 10 2020";
         eventDate[9] = "3 13 2020";
         eventDate[10] = "3 18 2020"; 
@@ -372,40 +485,73 @@
         eventTime[18] = "5 p.m.";
         eventTime[19] = "6:30 p.m.";
 
-        // array for current dates to display, get value to start the array
         var startIndex = 0;
-        for (var i = 0; i < 20; i++) {
-            // into token seperated by space
-            var getDate = eventDate[i].split(' '); // format "month day year"
-            var getDay = getDate[1];
-            var getMonth = getDate[0];
-            var getYear = getDate[2];
+        var startBool = 0; // 0 = start of code, -1 = after start 
+        // ^^ vv first load always check the event to upload in calendar and find index start of upcoming event
+        createEventCal(startBool);
 
-            if (getMonth >= (today.getMonth() + 1) && getYear == today.getFullYear()) 
-            { // same month or further month
-                if (getMonth == (today.getMonth()+ 1) && getDay < today.getDate()) { // same month but it's past that day
-                    continue; // or do nothing but continues loop without completing current loop codes pass this line
-                } else { // all future
-                    startIndex = i;
-                    // noteList class with events to list UL
-                    var eventCalendarr = document.getElementsByClassName('noteList')[0];
-                    eventCalendarr.style.color = 'white';
-                    var eventList1 = document.createTextNode(eventDescript[startIndex] + ' at ' + eventTime[startIndex]);
-                    eventCalendarr.appendChild(eventList1);
-                    if (startIndex == 4 || startIndex == 15) {
-                        var eventList2 = document.createTextNode(eventDescript[startIndex + 1] + ' at ' + eventTime[startIndex + 1]);
-                        eventCalendarr.appendChild(eventList2);
-                    } else if (startIndex == 5 || startIndex == 16) {
-                        var eventList2 = document.createTextNode(eventDescript[startIndex + 1] + ' at ' + eventTime[startIndex + 1]);
-                        eventCalendarr.appendChild(eventList2);
+        // array for current dates to display, get value to start the array
+        function createEventCal(x) {
+            if (x != 0) {
+                // clear event section in calendar
+                var eventCalendarr = document.getElementsByClassName('noteList')[0];
+                eventCalendarr.innerHTML = '';
+
+                for (var i = 0; i < 20; i++) {
+                    // into token seperated by space
+                    var getDate = eventDate[i].split(' '); // format "month day year"
+                    var getDay = getDate[1];
+                    var getMonth = getDate[0];
+                    var getYear = getDate[2];
+                    if (getDay == x) {
+                        startIndex = getDay;
+                        eventCalendarr.style.color = 'white';
+                        var eventList1 = document.createTextNode(eventDescript[i] + ' at ' + eventTime[i]);
+                        eventCalendarr.appendChild(eventList1);
+                        if (i == 4 || i == 15) {
+                            var eventList2 = document.createTextNode(eventDescript[startIndex + 1] + ' at ' + eventTime[startIndex + 1]);
+                            eventCalendarr.appendChild(eventList2);
+                        } else if (i == 5 || i == 16) {
+                            var eventList2 = document.createTextNode(eventDescript[startIndex - 1] + ' at ' + eventTime[startIndex - 1]);
+                            eventCalendarr.appendChild(eventList2);
+                        }
                     }
-                    break; // stops loop, knowing this start index
                 }
             } else {
-                continue;
+                for (var i = 0; i < 20; i++) {
+                    // into token seperated by space
+                    var getDate = eventDate[i].split(' '); // format "month day year"
+                    var getDay = getDate[1];
+                    var getMonth = getDate[0];
+                    var getYear = getDate[2];
+
+                    if (getMonth >= (today.getMonth() + 1) && getYear == today.getFullYear()) 
+                    { // same month or further month
+                        if (getMonth == (today.getMonth()+ 1) && getDay < today.getDate()) { // same month but it's past that day
+                            continue; // or do nothing but continues loop without completing current loop codes pass this line
+                        } else { // all future
+                            startIndex = i;
+                            x = -1;
+                            // noteList class with events to list UL
+                            if (startIndex == today.getDate()) {
+                                var eventCalendarr = document.getElementsByClassName('noteList')[0];
+                                eventCalendarr.style.color = 'white';
+                                var eventList1 = document.createTextNode(eventDescript[startIndex] + ' at ' + eventTime[startIndex]);
+                                eventCalendarr.appendChild(eventList1);
+                                if (startIndex == 4 || startIndex == 15) {
+                                    var eventList2 = document.createTextNode(eventDescript[startIndex + 1] + ' at ' + eventTime[startIndex + 1]);
+                                    eventCalendarr.appendChild(eventList2);
+                                } else if (startIndex == 5 || startIndex == 16) {
+                                    var eventList2 = document.createTextNode(eventDescript[startIndex - 1] + ' at ' + eventTime[startIndex - 1]);
+                                    eventCalendarr.appendChild(eventList2);
+                                }
+                            }
+                            break; // stops loop, knowing this start index
+                        }
+                    } 
+                }
             }
-            // if reach here, then no more events left
-            document.writeln("Sorry, there are no more events in the near future.");
+                
         }
 
         // display a certain amount of events (5-10) and have an option to display all events on database
@@ -447,9 +593,11 @@
             var td2 = document.createElement('td');
             td2.innerHTML = eventDescript[x];
             td2.style.textAlign = 'left';
+
             var td3 = document.createElement('td');
             td3.innerHTML = eventLocation[x];
             td3.style.textAlign = 'left';
+
             tr2.appendChild(td1);
             tr2.appendChild(td2);
             tr2.appendChild(td3);
