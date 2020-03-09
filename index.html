@@ -660,22 +660,11 @@
   </div>
 
   <script>
-
-		var a = document.getElementById("backgroundImg");
-			a.addEventListener("load", function(){
-				var svgDoc = a.contentDocument;
-    			var svgDocWhole = svgDoc.getElementById("svg6232");
-    			var svgDocYMCA = svgDocWhole.getElementById("a6795");
-			});
-
     var modal = document.getElementById("myModal"); // Call Modal
     var map = document.getElementById("ymca_bldg");
     var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
     var span = document.getElementsByClassName("close")[0]; // Way to Close Modal
     logo.onclick = function() {
-      modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
-    }
-    svgDocYMCA.onclick = function() {
       modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
     }
     span.onclick = function() {
