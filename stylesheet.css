@@ -1,316 +1,506 @@
-/*Unused CSS
-.KnowUWLogo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 125px;
-  height: 125px;
-position: relative;
+html {
+  background: rgb(44, 20, 89);
+  background: linear-gradient(
+    0deg,
+    rgba(44, 20, 89, 1) 45%,
+    rgba(75, 46, 131, 1) 100%
+  );
 }
-#whitneyBlg{
-  z-index: 0;
-  width: 140px;
-  top: 108px;
-  left: 734px;
+
+/*Preloader*/
+.wrapper {
   position: absolute;
-  animation: fadeIn ease 5s;
-  /*-webkit-max-width: 80%;
-  -webkit-max-height: 100%;
-  -webkit-min-width: 100%;
-  -webkit-min-height: 100px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
-#whitneyBlg:hover{
-  transform: scale(1.2);
-  cursor: pointer;
-  animation: fadeIn ease 5s;
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 295px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  z-index: 1001;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 100%; /*100% opens up horizontal -- 50% slides up/down */
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  z-index: 1000;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
-.topnav a:hover {
-  background-color: #b7a57a;
-  color: black;
+
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.topnav a.active {
-  background-color: #4b2e83;
-  color: white;
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.welcomeBar{
-  text-align: center;
-  font-size: 2.5vw;
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
-.welcomeBar:hover{
-  cursor: pointer;
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
 }
-#uwLogo {
-	height: 40px;
-	float: right;
-}*/
+
+* {
+  box-sizing: border-box;
+}
 
 html {
-	background: rgb(44, 20, 89);
-	background: linear-gradient(
-		0deg,
-		rgba(44, 20, 89, 1) 45%,
-		rgba(75, 46, 131, 1) 100%
-	);
+  position: relative;
+  min-height: 100%;
+}
+
+/*Welcome to UW*/
+@media screen and (min-width: 1000px) {
+  @keyframes image-slide {
+    0% {
+      transform: translatex(0px) scale(0);
+    }
+    60% {
+      transform: translatex(0px) scale(1);
+    }
+    90% {
+      transform: translatex(150px) scale(1);
+    }
+    100% {
+      transform: translatex(150px) scale(1);
+    }
+  }
+  @keyframes text-slide {
+    0% {
+      width: 100%;
+    }
+    60% {
+      width: 100%;
+    }
+    77% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  @keyframes image-slide {
+    0% {
+      transform: translatex(0px) scale(0);
+    }
+    60% {
+      transform: translatex(0px) scale(1);
+    }
+    90% {
+      transform: translatex(120px) scale(1);
+    }
+    100% {
+      transform: translatex(120px) scale(1);
+    }
+  }
+  @keyframes text-slide {
+    0% {
+      width: 100%;
+    }
+    60% {
+      width: 100%;
+    }
+    77% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  @keyframes image-slide {
+    0% {
+      transform: translatex(0px) scale(0);
+    }
+    60% {
+      transform: translatex(0px) scale(1);
+    }
+    90% {
+      transform: translatex(80px) scale(1);
+    }
+    100% {
+      transform: translatex(80px) scale(1);
+    }
+  }
+  @keyframes text-slide {
+    0% {
+      width: 100%;
+    }
+    60% {
+      width: 100%;
+    }
+    77% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.image-container img {
+  -webkit-animation: image-slide 4s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: image-slide 4s cubic-bezier(0.5, 0.5, 0, 1);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  height: 200px;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-left: -100px;
+}
+.text-container h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: sans-serif;
+  color: white;
+}
+.text-container .fading-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: black;
+  -webkit-animation: text-slide 4s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: text-slide 4s cubic-bezier(0.5, 0.5, 0, 1);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1000px) {
+  .image-container img {
+    height: 150px;
+  }
+
+  .text-container {
+    margin-left: -80px;
+  }
+
+  .text-container h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .image-container img {
+    height: 120px;
+  }
+
+  .text-container {
+    margin-left: -70px;
+  }
+
+  .text-container h1 {
+    font-size: 25px;
+  }
 }
 
 /*Header CSS*/
 header {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .background {
-	position: relative;
-	z-index: -1;
+  position: relative;
+  z-index: -1;
 }
 .KnowUWLogo {
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 9%;
-	animation: fadeIn ease 5s;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 9%;
+  animation: fadeIn ease 5s;
 }
 .KnowUWLogo:hover {
-	transform: scale(1.1);
-	cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 h1 {
-	text-align: center;
-	color: white;
-	margin: 0;
-	padding: 0;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 /*Body*/
 body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #backgroundImg {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 100%;
-	animation: fadeIn ease 5s;
-	z-index: 0;
-	box-shadow: 0px 0px 15px #100329;
-	/*-webkit-animation: fadeIn ease 4s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn ease 5s;
+  z-index: 0;
+  box-shadow: 0px 0px 15px #100329;
+  /*-webkit-animation: fadeIn ease 4s;
   -moz-animation: fadeIn ease 4s;
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;*/
 }
 #campusnight {
-	animation: fadeIn ease 5s;
+  animation: fadeIn ease 5s;
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*Footer CSS*/
 footer {
-	background-color: #4b2e83;
-	color: white;
-	vertical-align: bottom;
-	padding: 5px;
-}
-
-* {
-	box-sizing: border-box;
+  background-color: #4b2e83;
+  color: white;
+  vertical-align: bottom;
+  padding: 5px;
 }
 
 .row {
-	display: table;
-	width: 100%;
+  display: table;
+  width: 100%;
 }
 .column {
-	display: table-cell;
-	background-color: #ffffff;
-	padding: 10px;
-	color: #4b2e83;
-	text-align: center;
-	width: 37.5%;
+  display: table-cell;
+  background-color: #ffffff;
+  padding: 10px;
+  color: #4b2e83;
+  text-align: center;
+  width: 37.5%;
 }
 
 #FirstColumn {
-	width: 25%;
-	border-right: 3px solid #85754d;
+  width: 25%;
+  border-right: 3px solid #85754d;
 }
-#SecondColumn {
-	background-color: #ffffff;
-	border-right: 3px solid #85754d;
+#ThirdColumn {
+  background-color: #ffffff;
+  border-left: 3px solid #85754d;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1150px) {
-	.column {
-		float: left;
-	}
-	#FirstColumn {
-		width: 100%;
-		border-right: none;
-		border-bottom: 3px solid #85754d;
-	}
-	#SecondColumn {
-		width: 100%;
-		border-right: none;
-		border-bottom: 3px solid #85754d;
-	}
-	#ThirdColumn {
-		width: 100%;
-	}
+  .column {
+    float: left;
+  }
+  #FirstColumn {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid #85754d;
+  }
+  #ThirdColumn {
+    width: 100%;
+    border-left: none;
+    border-top: 3px solid #85754d;
+  }
+  #ThirdColumn {
+    width: 100%;
+  }
 }
 
 .officialsite {
-	padding-bottom: 10px;
-	display: block;
-	position: relative;
-	text-align: center;
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
+  padding-bottom: 10px;
+  display: block;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p.contactinfo {
-	text-align: center;
+  text-align: center;
 }
 
 p {
-	color: black;
-	text-align: left;
+  color: black;
+  text-align: left;
 }
 .address {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 .address:hover {
   color: #4b2e83;
 }
 .address:visited {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 .emaillink {
-	color: black;
+  color: black;
 }
 .emaillink:hover {
-	color: #4b2e83;
+  color: #4b2e83;
 }
 
 /* Clear floats after the columns */
 .row:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Navigation interactive CSS */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 2; /* Sit on top */
-	padding-top: 50px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 .modal-header {
-	padding: 2px 4px;
-	background-color: #4b2e83;
-	color: white;
-	font-size: 30px;
+  padding: 2px 4px;
+  background-color: #4b2e83;
+  color: white;
+  font-size: 30px;
 }
 
 .modal-footer {
-	padding: 2px 16px;
-	background-color: #b7a57a;
-	color: white;
+  padding: 2px 16px;
+  background-color: #b7a57a;
+  color: white;
 }
 
 .modal-body {
-	padding: 2px 16px;
+  padding: 2px 16px;
 }
 
 .modal-content {
-	position: relative;
-	background-color: #fefefe;
-	margin: auto;
-	padding: 0;
-	border: 1px solid #888;
-	width: 80%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	-webkit-animation-name: topdownanimation;
-	-webkit-animation-duration: 0.4s;
-	animation-name: topdownanimation;
-	animation-duration: 0.4s;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: topdownanimation;
+  -webkit-animation-duration: 0.4s;
+  animation-name: topdownanimation;
+  animation-duration: 0.4s;
 }
 #a6795 {
-	cursor: pointer;
+  cursor: pointer;
 }
 @keyframes topdownanimation {
-	from {
-		top: -300px;
-		opacity: 0;
-	}
-	to {
-		top: 0;
-		opacity: 1;
-	}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes topdownanimation {
-	from {
-		top: -300px;
-		opacity: 0;
-	}
-	to {
-		top: 0;
-		opacity: 1;
-	}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 .close {
-	color: white;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 .close3,
 .close2,
 .close1 {
-	color: white;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close3:hover,
@@ -319,21 +509,21 @@ p {
 .close1:focus,
 .close2:hover,
 .close2:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .clickToReadMore {
-	color: white;
-	text-decoration: none;
-	cursor: pointer;
-	text-align: center;
-	text-shadow: 0px 1px 1px black;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
   padding: 14px;
 }
 .aboutKnowUW {
-	text-align: center;
+  text-align: center;
   padding: 15px;
 }
 /* End of Navigation interaction css */
@@ -346,215 +536,215 @@ p {
 }
 
 .calendar {
-	border-radius: 4px;
-	overflow: hidden;
-	width: 100%;
-	height: 435px;
-	max-height: 435px;
-  	max-width: 925px;
-	background-color: #ffffff;
-	color: #333333;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  height: 435px;
+  max-height: 435px;
+  max-width: 925px;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .calendar h1,
 .calendar h2 {
-	font-weight: 300;
-	font-size: 26px;
-	line-height: 28px;
-	text-transform: uppercase;
-	margin: 0px 0px 20px 0px;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
 }
 
 .calendar h1 span {
-	display: block;
+  display: block;
 }
 
 .calendar .col {
-	position: relative;
-	float: left;
-	height: 100%;
+  position: relative;
+  float: left;
+  height: 100%;
 }
 
 .calendar .col .content {
-	padding: 40px;
+  padding: 40px;
 }
 
 .calendar ul {
-	margin: 0px;
+  margin: 0px;
 }
 
 .calendar ul li {
-	list-style: none;
+  list-style: none;
 }
 
 .calendar .leftCol {
-	width: 40%;
-	background-color: #4b2e83;
+  width: 40%;
+  background-color: #4b2e83;
 }
 
 /* Minimize Button */
 .styled {
-	margin-top: 5px;
-	margin-left: 5px;
-	float: left;
-	border: 0;
-	line-height: 2.5;
-	padding: 0 10px;
-	font-size: 10px;
-	text-align: center;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-	border-radius: 10px;
-	background-color: gray;
-	background-image: linear-gradient(
-		to top left,
-		rgba(0, 0, 0, 0.2),
-		rgba(0, 0, 0, 0.2) 30%,
-		rgba(0, 0, 0, 0)
-	);
-	box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-		inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 /* Minimize Button */
 .styled:hover {
-	background-color: purple;
+  background-color: purple;
 }
 /* Minimize Button */
 .styled:active {
-	box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-		inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calendar .noteList li {
-	color: #ffffff;
-	margin-bottom: 10px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .calendar .notes p,
 .calendar .notes input,
 .calendar .noteList li {
-	font-weight: 300;
-	font-size: 14px;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .calendar .notes p {
-	border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
 }
 
 .calendar .notes input {
-	background-color: #4b2e83;
-	color: #ffffff;
-	border: none;
-	width: 200px;
+  background-color: #4b2e83;
+  color: #ffffff;
+  border: none;
+  width: 200px;
 }
 
 .calendar .addNote,
 .calendar .removeNote {
-	float: right;
-	color: rgba(255, 255, 255, 0.4);
-	font-weight: bold;
-	margin-left: 20px;
+  float: right;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  margin-left: 20px;
 }
 
 .calendar .addNote:hover,
 .calendar .removeNote:hover {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .calendar .addNote {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 .calendar .leftCol h1 {
-	color: #ffffff;
-	margin-bottom: 40px;
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .calendar .rightCol {
-	width: 60%;
-	background-color: #fcebbd;
+  width: 60%;
+  background-color: #fcebbd;
 }
 
 .calendar .rightCol h2 {
-	color: #c7bebe;
-	text-align: right;
-	margin-bottom: 70px;
+  color: #c7bebe;
+  text-align: right;
+  margin-bottom: 70px;
 }
 
 .calendar .months li,
 .calendar .weekday li,
 .calendar .days li {
-	float: left;
-	text-transform: uppercase;
+  float: left;
+  text-transform: uppercase;
 }
 
 .calendar .months li a,
 .calendar .weekday li a,
 .calendar .days li a {
-	display: block;
-	color: #747978;
+  display: block;
+  color: #747978;
 }
 
 .calendar .months li a {
-	font-size: 10px;
-	color: #c7bebe;
-	text-align: center;
-	width: 32px;
-	margin-bottom: 20px;
+  font-size: 10px;
+  color: #c7bebe;
+  text-align: center;
+  width: 32px;
+  margin-bottom: 20px;
 }
 
 .calendar .months li .selected {
-	font-weight: bold;
-	color: #747978;
+  font-weight: bold;
+  color: #747978;
 }
 
 .calendar .weekday li a {
-	width: 55px;
-	text-align: center;
-	margin-bottom: 20px;
-	font-size: 12px;
+  width: 55px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 .calendar .days li {
-	width: 55px;
+  width: 55px;
 }
 
 .calendar .days li a {
-	width: 36px;
-	height: 24px;
-	text-align: center;
-	margin: auto auto;
-	font-size: 12px;
-	font-weight: bold;
-	border-radius: 12px;
-	margin-bottom: 10px;
-	padding-top: 10px;
+  width: 36px;
+  height: 24px;
+  text-align: center;
+  margin: auto auto;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .calendar .days li a:hover {
-	background-color: #eeede9;
+  background-color: #eeede9;
 }
 
 .calendar .days li .selected {
-	background-color: #f5a1a3 !important;
-	color: #ffffff;
+  background-color: #f5a1a3 !important;
+  color: #ffffff;
 }
 
 .calendar .days li .event {
-	color: #f5a1a3;
+  color: #f5a1a3;
 }
 /* placeholder color */
 ::-webkit-input-placeholder {
-	color: #ffffff;
+  color: #ffffff;
 }
 :-moz-placeholder {
-	color: #ffffff;
+  color: #ffffff;
 }
 ::-moz-placeholder {
-	color: #ffffff;
+  color: #ffffff;
 }
 :-ms-input-placeholder {
-	color: #ffffff;
+  color: #ffffff;
 }
 /* end of Calendar CSS */
 
@@ -569,19 +759,19 @@ p {
   padding: 0;}*/
 
 .page {
-	max-width: 640px;
-	margin: 0 auto 30px auto;
+  max-width: 640px;
+  margin: 0 auto 30px auto;
 }
 
 .panel {
-	background-color: #fff;
-	color: #666;
-	box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
-	overflow: auto;
+  background-color: #fff;
+  color: #666;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: auto;
 }
 
 button {
-	border: none;
+  border: none;
 }
 
 /********** LOGO **********/
@@ -590,97 +780,97 @@ button {
 
 /*****************  No JS ***************/
 #billboard {
-	text-align: center;
+  text-align: center;
 }
 .js-warning {
-	display: none;
+  display: none;
 }
 
 .no-js .js-warning {
-	display: block;
-	border: 3px solid #fff;
-	text-align: center;
-	background-color: #fff;
-	color: #db5391;
-	padding: 10px;
+  display: block;
+  border: 3px solid #fff;
+  text-align: center;
+  background-color: #fff;
+  color: #db5391;
+  padding: 10px;
 }
 /* END of base.css */
 
 /* Beginning slider.css */
 /********** SLIDER **********/
 .slider {
-	max-width: 800px;
-	margin: 0px auto 30px auto;
+  max-width: 800px;
+  margin: 0px auto 30px auto;
 }
 
 .slide-viewer {
-	position: relative; /* needed for IE7 */
-	overflow: hidden;
-	height: 500px;
+  position: relative; /* needed for IE7 */
+  overflow: hidden;
+  height: 500px;
 }
 /* 430px is orginal */
 
 .slide-group {
-	width: 100%;
-	height: 100%;
-	position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .slide {
-	width: 100%;
-	height: 100%;
-	display: none;
-	position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
 }
 
 .slide:first-child {
-	display: block;
+  display: block;
 }
 
 .slideImg {
-	width: 100%;
+  width: 100%;
 }
 
 /********** BUTTONS **********/
 .slide-buttons {
-	text-align: center;
+  text-align: center;
 }
 
 .slide-btn {
-	border: none;
-	background: none;
-	color: #000;
-	font-size: 200%;
-	line-height: 0.5em;
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 200%;
+  line-height: 0.5em;
 }
 
 .slide-btn.active,
 .slide-btn:hover {
-	color: #4b2e83;
-	cursor: pointer;
+  color: #4b2e83;
+  cursor: pointer;
 }
 /* END of slider.css */
 
 #a6795:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 /* End of buttons CSS */
 
 /* Science Building Page and other building pages */
 .sideBar {
-	background-color: purple;
-	width: 155px;
-	float: left;
+  background-color: purple;
+  width: 155px;
+  float: left;
 }
 
 .bodySpecial {
-	background: #c850c0;
-	background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
-	background: -o-linear-gradient(45deg, #4158d0, #c850c0);
-	background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
-	background: linear-gradient(45deg, #4158d0, #c850c0);
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
 }
 
 #lastSection {
-  float:bottom;
+  float: bottom;
 }
