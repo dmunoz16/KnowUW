@@ -78,7 +78,7 @@ header {
 	position: absolute;
 	top: 0%;
 	left: 0%;
-	width: 150px;
+	width: 9%;
 	animation: fadeIn ease 5s;
 }
 .KnowUWLogo:hover {
@@ -103,12 +103,11 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 80%;
-	min-height: 100%;
+	width: 100%;
+	height: 100%;
 	animation: fadeIn ease 5s;
-	z-index: 1;
+	z-index: 0;
 	box-shadow: 0px 0px 15px #100329;
-	padding: 0px;
 	/*-webkit-animation: fadeIn ease 4s;
   -moz-animation: fadeIn ease 4s;
   -o-animation: fadeIn ease 4s;
@@ -305,6 +304,8 @@ p {
 	text-decoration: none;
 	cursor: pointer;
 }
+.close3,
+.close2,
 .close1 {
 	color: white;
 	float: right;
@@ -312,12 +313,17 @@ p {
 	font-weight: bold;
 }
 
+.close3:hover,
+.close3:focus,
 .close1:hover,
-.close1:focus {
+.close1:focus,
+.close2:hover,
+.close2:focus {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
 }
+
 .clickToReadMore {
 	color: white;
 	text-decoration: none;
