@@ -7,6 +7,8 @@
     <!-- external css file -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <link href="FullScreenMap.svg" rel="import">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js" defer></script>
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <title>KnowUW</title>
 </head>
@@ -957,21 +959,13 @@
         <h2 class="aboutKnowUW">About KnowUW</h2>
       </div>
       <div class="modal-body">
-        <a href="index.html">Home</a>
         <br>
-        <a href="WhitneyPage.html">Whitney Building Page</a>
-        <br>
-        <a href="SnoqualmieBuildingPage.html">Snoqualmie Building Page</a>
-        <br>
-        <a href="ScienceBuildingPage.html">Science (SCI) Building</a>
-        <br>
-        <a href="WestCoastGrocery(WCG)Page.html">West Coast Grocery(WCG) Building</a>
+        <p>KnowUW is an informational website created by Information Technology majors for the class TINFO 230.</p>
         <br>
         <p>INFORMATION...</p>
         <br>
         <p>INFORMATION...</p>
         <br>
-        <p>INFORMATION...</p>
       </div>
       <div class="modal-footer">
         <a class="clickToReadMore" href="https://www.tacoma.uw.edu/about-uw-tacoma/about-university-washington-tacoma" target="_blank">
@@ -981,24 +975,86 @@
     </div>
   </div>
 
+  <div id="WhitneyModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close1">&times;</span>
+        <h2 class="aboutKnowUW">Whitney Building</h2>
+      </div>
+      <div class="modal-body">
+         <section>
+      <div class="slider">
+        <div class="slide-viewer">
+          <div class="slide-group">
+            <div class="slide slide-1">
+              <!-- TEMP IMAGE OF THE WHITNEY BUILDING -->
+              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/whitney.jpg" alt="Map" />
+            </div>
+          </div>
+        </div>
+        <div class="slide-buttons"></div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <table id="infoTable">
+          <tbody>
+              <tr>
+                <td class="columnTitle">Physical Address:</td>
+              </tr>
+              <tr>
+                <td class="column1">1901 S. Fawcett Avenue</td>
+              </tr>
+              <tr>
+                <td class="columnTitle">Building Hours:</td>
+              </tr>
+              <tr>
+                <td class="column1">
+                  No public access. Open only for scheduled classes and events. 
+                </td>
+              </tr>           
+            </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+  </section>
+</body>
+      </div>
+      <div class="modal-footer">
+        <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/whitney" target="_blank">
+          <h3>Click to Read More About This Building</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <script>
     var modal = document.getElementById("myModal"); // Call Modal
-    var Whitney_Modal = document.getElementById("whitneyModal");
+    var Whitney_Modal = document.getElementById("WhitneyModal");
     var Whitney_Bldg = document.getElementById("WhitneyBuilding"); 
     var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
-    var span = document.getElementsByClassName("close")[0]; // Way to Close Modal
+    var span = document.getElementsByClassName("close")[0];
+    var span1 = document.getElementsByClassName("close1")[0]; // Way to Close Modal
     logo.onclick = function() {
       modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
     }
     Whitney_Bldg.onclick = function() {
-      modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
+      Whitney_Modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
     }
-    span.onclick = function() {
+    span.onclick = function(event) {
       modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
+    }
+    span1.onclick = function(event) {
+      Whitney_Modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
     }
     window.onclick = function(event) { // Or if they Click anywhere Else, it Closes the Modal
       if (event.target == modal) {
         modal.style.display = "none";
+      }
+      else if (event.target == Whitney_Modal) {
+        Whitney_Modal.style.display = "none";
       }
     }
   </script>

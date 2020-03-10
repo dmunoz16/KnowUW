@@ -228,7 +228,7 @@ p {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 2; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
+	padding-top: 50px; /* Location of the box */
 	left: 0;
 	top: 0;
 	width: 100%; /* Full width */
@@ -305,15 +305,30 @@ p {
 	text-decoration: none;
 	cursor: pointer;
 }
+.close1 {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
 .clickToReadMore {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 	text-align: center;
 	text-shadow: 0px 1px 1px black;
+  padding: 14px;
 }
 .aboutKnowUW {
 	text-align: center;
+  padding: 15px;
 }
 /* End of Navigation interaction css */
 

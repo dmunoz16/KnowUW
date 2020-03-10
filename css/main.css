@@ -197,13 +197,11 @@ tbody tr:hover {
 
 .column1 {
   width: 260px;
-  padding-left: 40px;
   text-align: center;
 }
 
 .column1x {
   width: 260px;
-  padding-left: 40px;
   text-align: center;
   font-weight: bold;
 }
@@ -211,7 +209,6 @@ tbody tr:hover {
 .columnTitle {
   font-weight: bold;
   width: 260px;
-  padding-left: 40px;
   text-align: center;
 }
 
