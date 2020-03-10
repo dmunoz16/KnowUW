@@ -3,8 +3,17 @@
 
 <head>
   <link rel="icon" type="image/svg" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <meta charset="utf-8" />
   <!-- external css file -->
+  <link rel="preload" href="CampusNightG.jpg" as="image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   <link href="FullScreenMap.svg" rel="import">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -14,6 +23,9 @@
 </head>
 
 <body>
+  <!--Scroll to Top-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
   <div class="wrapper">
 
     <div id="loader-wrapper">
@@ -242,9 +254,9 @@
         <h2>Contact Us</h2><br>
         <p class="contactinfo">
           <a class="address" href="https://goo.gl/maps/eHmKAo2yPTPWc4FR9" target="_blank">
-          University of Washington Tacoma<br><br>
-          1900 Commerce Street<br><br>
-          Tacoma, WA 98402-3100</a>
+            University of Washington Tacoma<br><br>
+            1900 Commerce Street<br><br>
+            Tacoma, WA 98402-3100</a>
         </p><br><br>
         <p class="contactinfo">
           <strong>Phone:</strong> 253-692-4400<br><br>
@@ -253,7 +265,17 @@
         <p class="contactinfo">
           <a class="emaillink" href="https://www.tacoma.uw.edu/contact" target="_blank">Send us an email</a>
         </p> <!-- Click to send them to: https://www.tacoma.uw.edu/contact -->
-    </div>
+        <br><br><br>
+        <p class="social-media">
+          <a href="https://www.facebook.com/uwtacoma" class="fa fa-facebook" target="blank"></a>
+          <a href="https://twitter.com/uwtacoma" class="fa fa-twitter" target="blank"></a>
+          <a href="https://www.instagram.com/uwtacoma/" class="fa fa-instagram" target="blank"></a>
+          <a href="https://www.youtube.com/channel/UC5yP5pgHK5hPnPwfxMykQFw" class="fa fa-youtube" target="blank"></a>
+          <a href="https://www.linkedin.com/school/university-of-washington-tacoma" class="fa fa-linkedin"
+            target="blank"></a>
+          <a href="https://www.flickr.com/people/uwtacoma/" class="fa fa-flickr" target="blank"></a>
+        </p>
+      </div>
 
       <!-- Academic Calendar Section -->
       <div class="column" id="SecondColumn">
@@ -856,15 +878,19 @@
       </div>
       <div class="modal-body">
         <br>
-        <h3 style="text-align: center">KnowUW is an informational website created by Information Technology majors for the class TINFO 230.</h3>
+        <h3 style="text-align: center">KnowUW is an informational website created by Information Technology majors for
+          the class TINFO 230.</h3>
         <p style="text-align: center;">
-          We decided to create a website were people could use the interactive map to see pictures and information about each bulding<br>
-          on campus while also have access to important events and popular links related to UWT all available in one place.
+          We decided to create a website were people could use the interactive map to see pictures and information about
+          each bulding<br>
+          on campus while also have access to important events and popular links related to UWT all available in one
+          place.
         </p>
         <br>
         <img src="W.jpg" style="width: 60%; height: 80%; margin-left: auto; margin-right: auto; display: block">
         <br>
-        <p style="text-align: center; font-style: italic"><strong>Website Contributors:</strong> Benjamin Wheat, Diana Muñoz, Kornsavanh
+        <p style="text-align: center; font-style: italic"><strong>Website Contributors:</strong> Benjamin Wheat, Diana
+          Muñoz, Kornsavanh
           Sisa-at, Ben Newland</p>
         <br>
       </div>
