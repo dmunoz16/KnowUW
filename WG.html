@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Walsh Gardner  Building</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+      <img id="KnowUWLogo" class="KnowUWLogo" src="KnowUW2.png" alt="KnowUW Logo">
+    </div>
+    </header>
+
+    <section>
+      <div class="slider">
+        <div class="slide-viewer">
+          <div class="slide-group">
+            <div class="slide slide-1">
+              <img class="slideImg" src="BuildingImages\DSC_1225.JPG" alt="Map" />
+            </div>
+            <div class="slide slide-1">
+              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/walsh_gardner.jpg" alt="Map" />
+            </div>
+          </div>
+        </div>
+        <div class="slide-buttons"></div>
+      </div>
+
+    </section>
+
+    <section>
+      <div>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <table id="infoTable">
+          <thead>
+            <tr class="table100-head" rowspan=4>
+              <th class="column1x" rowspan=4>Walsh Gardner  Building</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td class="columnTitle">Physical Address:</td>
+              </tr>
+              <tr>
+                <td class="column1">1908 Pacific Avenue</td>
+              </tr>
+              <tr>
+                <td class="columnTitle">Building Hours:</td>
+              </tr>
+              <tr>
+                <td class="column1">
+                  Public access
+Monday - Friday: 7 a.m. - 5 p.m.
+                </td>
+              </tr>           
+            </tbody>
+        </table>
+      </div>
+      <br>
+      <p class="contactinfo">
+        <a class="emaillink" href="https://www.tacoma.uw.edu/contact"> Questions? Send us an email</a>
+      </p>">
+  </section>
+</body>
+
+<!-- THE ABOUT QUICK-VIEW WINDOW, MADE IN NEW BODY TO OVERLAY ALL OTHER ELEMENTS -->
+<body>
+  <!-- Trigger/Open The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 class="aboutKnowUW">About KnowUW</h2>
+      </div>
+      <div class="modal-body">
+        <a href="index.html">Home</a>
+        <br>
+        <a href="WhitneyPage.html">Whitney Building Page</a>
+        <br>
+        <a href="SnoqualmieBuildingPage.html">Snoqualmie Building Page</a>
+        <br>
+        <a href="ScienceBuildingPage.html">Science (SCI) Building</a>
+        <br>
+        <a href="WestCoastGrocery(WCG)Page.html">West Coast Grocery(WCG) Building</a>
+        <br>
+        <p>INFORMATION...</p>
+        <br>
+        <p>INFORMATION...</p>
+        <br>
+        <p>INFORMATION...</p>
+      </div>
+      <div class="modal-footer">
+        <a class="clickToReadMore" href="https://www.tacoma.uw.edu/about-uw-tacoma/about-university-washington-tacoma" target="_blank">
+          <h3>Click to Read More About UW Tacoma</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal"); // Call Modal
+    var map = document.getElementById("backgroundImg");
+    var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
+    var span = document.getElementsByClassName("close")[0]; // Way to Close Modal
+    logo.onclick = function() {
+      modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
+    }
+    map.onclick = function() {
+      modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
+    }
+    span.onclick = function() {
+      modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
+    }
+    window.onclick = function(event) { // Or if they Click anywhere Else, it Closes the Modal
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
