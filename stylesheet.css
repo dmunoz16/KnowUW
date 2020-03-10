@@ -130,7 +130,7 @@ html {
   }
   @keyframes text-slide {
     0% {
-      width: 100%;
+      width: 110%;
     }
     60% {
       width: 100%;
@@ -160,7 +160,7 @@ html {
   }
   @keyframes text-slide {
     0% {
-      width: 100%;
+      width: 110%;
     }
     60% {
       width: 100%;
