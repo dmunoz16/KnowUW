@@ -94,7 +94,7 @@ jQuery(function () {
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -108,4 +108,31 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+var minOrMax = 2; // min = 1, max = 2
+function minFunction() {
+  if (minOrMax == 1) { // need to minimize
+    minOrMax = 2;
+    var getCalendar = document.getElementsByClassName("calendar");
+    getCalendar[0].style.width = '100%';
+    getCalendar[0].style.height = '435px';
+    // change minimize button size
+    var getMinButton = document.getElementsByClassName("styled")[0];
+    getMinButton.style.fontSize = '10px';
+    getMinButton.innerHTML = 'Maximize';
+  } else { // max = 2, so maximize
+    minOrMax = 1;
+    //change size of calendar to 200-400% of current size, include animation
+    var getCalendar = document.getElementsByClassName("calendar")[0];
+    getCalendar.style.width = '195%';
+    getCalendar.style.height = '555px';
+    // change minimize button size
+    var getMinButton = document.getElementsByClassName("styled")[0];
+    getMinButton.style.fontSize = '14px';
+    // fix location of The Day's Date
+    var getLeftColTitle = document.getElementsByClassName("content")[0];
+    getLeftColTitle.style.marginTop = '60px';
+    getMinButton.innerHTML = 'Minimum';
+  }
 }
