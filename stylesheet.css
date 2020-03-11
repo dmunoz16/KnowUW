@@ -555,6 +555,7 @@ p.social-media {
   }
 }
 
+.close7,
 .close6,
 .close5,
 .close4,
@@ -567,7 +568,8 @@ p.social-media {
   font-size: 28px;
   font-weight: bold;
 }
-
+.close7:hover,
+.close7:focus,
 .close6:hover,
 .close6:focus,
 .close5:hover,

@@ -1258,6 +1258,79 @@ Monday - Friday: 7 a.m. - 5 p.m.
   </div>
 </div>
 
+<div id="ScienceModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close7">&times;</span>
+      <h2 class="aboutKnowUW">Science Building</h2>
+    </div>
+    <div class="modal-body">
+    <section>
+    <div class="slider">
+      <div class="slide-viewer">
+        <div class="slide-group">
+          <div class="slide slide-1">
+            <!-- TEMP IMAGE OF THE WHITNEY BUILDING -->
+            <img class="slideImg" src="BuildingImages/Sci2.JPG" alt="Map" />
+          </div>
+          <div class="slide slide-2">
+            <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/science.jpg" alt="sc1"  />
+          </div>
+          <div class="slide slide-3">
+            <img class="slideImg" src="BuildingImages/Sci3.JPG">
+          </div>
+          <div class="slide slide-4">
+            <img class="slideImg" src="BuildingImages/Sci4.JPG" />
+          </div>
+          <div class="slide slide-4">
+            <img class="slideImg" src="BuildingImages/Sci5.JPG" />
+          </div>
+          <div class="slide slide-4">
+            <img class="slideImg" src="BuildingImages/Sci6.JPG" />
+          </div>
+        </div>
+      </div>
+      <div class="slide-buttons"></div>
+    </div>
+</section>
+  <!-- Information About the building in this section -->
+  <section>
+    <div>
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <table id="infoTable">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="column1"><strong>Physical Address:</strong> 1745 Jefferson Avenue</td>
+            </tr>
+            <tr>
+              <td class="column1">
+              	<strong>Building Hours:</strong>
+              	<br>
+                Monday - Thursday: 7am-10pm (keycard required after 5pm)
+                <br>
+                Friday: 7am-5pm
+                <br>
+                Weekends: Subject to events and class schedules
+              </td>
+            </tr>           
+          </tbody>
+      </table>
+    </div>
+      <br>
+      <br>
+  </section>
+</body>
+    </div>
+    <div class="modal-footer">
+      <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/science-sci" target="_blank">
+        <h3>Click to Read More About This Building</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
 <script>
   var modal = document.getElementById("myModal"); // Call Modal
   var Whitney_Modal = document.getElementById("WhitneyModal");
@@ -1272,6 +1345,8 @@ Monday - Friday: 7 a.m. - 5 p.m.
   var Snoqualmie_Bldg = document.getElementById("SnoqualmieBuilding");
   var MattressFac_Modal = document.getElementById("MattressFacModal");
   var MattressFac_Bldg = document.getElementById("MattressFacBuilding");
+  var Science_Modal = document.getElementById("ScienceModal");
+  var Science_Bldg = document.getElementById("ScienceBuilding");
   var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
   var span = document.getElementsByClassName("close")[0];
   var span1 = document.getElementsByClassName("close1")[0];
@@ -1279,7 +1354,8 @@ Monday - Friday: 7 a.m. - 5 p.m.
   var span3 = document.getElementsByClassName("close3")[0];
   var span4 = document.getElementsByClassName("close4")[0]; 
   var span5 = document.getElementsByClassName("close5")[0];
-  var span6 = document.getElementsByClassName("close6")[0]; // Way to Close Modal
+  var span6 = document.getElementsByClassName("close6")[0];
+  var span7 = document.getElementsByClassName("close7")[0]; // Way to Close Modal
   logo.onclick = function () {
     modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
   }
@@ -1301,6 +1377,9 @@ Monday - Friday: 7 a.m. - 5 p.m.
   MattressFac_Bldg.onclick = function () {
     MattressFac_Modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
   }
+  Science_Bldg.onclick = function () {
+    Science_Modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
+  }
   span.onclick = function (event) {
     modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
   }
@@ -1321,6 +1400,9 @@ Monday - Friday: 7 a.m. - 5 p.m.
   }
   span6.onclick = function (event) {
     MattressFac_Modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
+  }
+  span7.onclick = function (event) {
+    Science_Modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
   }
   window.onclick = function (event) { // Or if they Click anywhere Else, it Closes the Modal
     if (event.target == modal) {
