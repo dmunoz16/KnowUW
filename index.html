@@ -1060,6 +1060,127 @@
   </div>
 </div>
 
+<div id="TiogaModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close4">&times;</span>
+      <h2 class="aboutKnowUW">Tioga Library</h2>
+    </div>
+    <div class="modal-body">
+     <section>
+      <div class="slider">
+        <div class="slide-viewer">
+          <div class="slide-group">
+            <div class="slide slide-1">
+              <img class="slideImg" src="BuildingImages\DSC_1231.JPG" alt="Map" />
+            </div>
+            <div class="slide slide-1">
+              <img class="slideImg" src="BuildingImages\DSC_1232.JPG" alt="Map" />
+            </div>
+          </div>
+        </div>
+        <div class="slide-buttons"></div>
+      </div>
+
+    </section>
+
+    <section>
+      <div>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <table id="infoTable">
+          <thead>
+          </thead>
+          <tbody>
+              <tr>
+                <td class="column1"><strong>Physical Address:</strong> 1907 Jefferson Avenue</td>
+              </tr>
+              <tr>
+                <td class="column1">
+                  <strong>Building Hours: </strong>
+                  Mon-Fri 8:00 am - 5:00 pm
+                  Sat-Sun 9:00 am - 5:00 pm
+                </td>
+              </tr>           
+            </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+  </section>
+</body>
+    </div>
+    <div class="modal-footer">
+      <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/tioga-library-building" target="_blank">
+        <h3>Click to Read More About This Building</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="SnoqualmieModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close5">&times;</span>
+      <h2 class="aboutKnowUW">Snoqualmie Building</h2>
+    </div>
+    <div class="modal-body">
+    <section>
+      <div>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <table id="infoTable">
+          <thead>
+            <tr class="table100-head" rowspan=4>
+              <th class="column1x" rowspan=4>Snoqualmie Building</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td class="columnTitle">Physical Address:</td>
+              </tr>
+              <tr>
+                <td class="column1">1902-10 Commerce Street</td>
+              </tr>
+              <tr>
+                <td class="columnTitle">Building Hours:</td>
+              </tr>
+              <tr>
+                <td class="column1">
+                    <br>
+                      Monday - Thursday: 7am-12am
+                      <br>
+                      Friday: 7am-5pm
+                      <br>
+                      Saturday: 9am-5pm
+                      <br>
+                      Sunday: 9am-9pm
+                      <br>
+                      <br>
+                      Holiday Closures:
+                      <br>
+                      Monday, January 20th - Martin Luther King Jr., Day
+                      <br>
+                      Monday, February 17th - President's Day
+                </td>
+              </tr>           
+            </tbody>
+        </table>
+      </div>
+        <br>
+        <p class="contactinfo">
+          <a class="emaillink" href="https://www.tacoma.uw.edu/contact"> Questions? Send us an email</a>
+        </p>
+  
+    </section>
+</body>
+    </div>
+    <div class="modal-footer">
+      <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/tioga-library-building" target="_blank">
+        <h3>Click to Read More About This Building</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
 <script>
   var modal = document.getElementById("myModal"); // Call Modal
   var Whitney_Modal = document.getElementById("WhitneyModal");
@@ -1068,11 +1189,17 @@
   var YMCA_Bldg = document.getElementById("UniversityYMCABuilding");
   var Court17_Modal = document.getElementById("Court17Modal");
   var Court17_Bldg = document.getElementById("Court17Building");
+  var Tioga_Modal = document.getElementById("TiogaModal");
+  var Tioga_Bldg = document.getElementById("TiogaLibraryBuilding");
+  var Snoqualmie_Modal = document.getElementById("SnoqualmieModal");
+  var Snoqualmie_Bldg = document.getElementById("SnoqualmieBuilding");
   var logo = document.getElementById("KnowUWLogo"); // Use Logo to Summon Modal
   var span = document.getElementsByClassName("close")[0];
   var span1 = document.getElementsByClassName("close1")[0];
   var span2 = document.getElementsByClassName("close2")[0];
-  var span3 = document.getElementsByClassName("close3")[0]; // Way to Close Modal
+  var span3 = document.getElementsByClassName("close3")[0];
+  var span4 = document.getElementsByClassName("close4")[0]; 
+  var span5 = document.getElementsByClassName("close5")[0]; // Way to Close Modal
   logo.onclick = function () {
     modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
   }
@@ -1085,6 +1212,12 @@
   Court17_Bldg.onclick = function () {
     Court17_Modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
   }
+  Tioga_Bldg.onclick = function () {
+    Tioga_Modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
+  }
+  Snoqualmie_Bldg.onclick = function () {
+    Snoqualmie_Modal.style.display = "block"; // When Logo is Clicked, it Summons the Body/Modal
+  }
   span.onclick = function (event) {
     modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
   }
@@ -1096,6 +1229,12 @@
   }
   span3.onclick = function (event) {
     Court17_Modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
+  }
+  span4.onclick = function (event) {
+    Tioga_Modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
+  }
+  span5.onclick = function (event) {
+    Snoqualmie_Modal.style.display = "none"; // When (x) is Clicked, it Closes the Modal
   }
   window.onclick = function (event) { // Or if they Click anywhere Else, it Closes the Modal
     if (event.target == modal) {
