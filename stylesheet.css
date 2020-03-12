@@ -555,10 +555,6 @@ p.social-media {
   }
 }
 
-.close9,
-.close8,
-.close7,
-.close6,
 .close5,
 .close4,
 .close3,
@@ -571,14 +567,6 @@ p.social-media {
   font-weight: bold;
 }
 
-.close9:hover,
-.close9:focus,
-.close8:hover,
-.close8:focus,
-.close7:hover,
-.close7:focus,
-.close6:hover,
-.close6:focus,
 .close5:hover,
 .close5:focus,
 .close4:hover,
@@ -623,7 +611,7 @@ p.social-media {
   width: 100%;
   height: 435px;
   max-height: 435px;
-  max-width: 925px;
+  max-width: 863px;
   background-color: #ffffff;
   color: #333333;
 }
@@ -955,4 +943,9 @@ button {
 
 #lastSection {
   float: bottom;
+}
+
+#emptySpaceDays {
+  height: 24px;
+  width:55px;
 }
