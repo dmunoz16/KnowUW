@@ -383,13 +383,13 @@ footer {
     border-right: none;
     border-bottom: 3px solid #85754d;
   }
-  #SecondColumn {
-    width: 100%;
-  }
   #ThirdColumn {
     width: 100%;
     border-left: none;
     border-top: 3px solid #85754d;
+  }
+  #ThirdColumn {
+    width: 100%;
   }
 }
 
