@@ -2,7 +2,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/svg" href="favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -11,7 +12,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <!-- external css file -->
   <link rel="preload" href="CampusNightG.jpg" as="image">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,8 +20,8 @@
   <link href="FullScreenMap.svg" rel="import">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="script.js" defer></script>
-  <xml version="1.0" encoding="UTF-8" standalone="no"?>
-  <title>KnowUW</title>
+  <xml version="1.0" encoding="UTF-8" standalone="no">
+    <title>KnowUW</title>
 </head>
 
 <body>
@@ -283,279 +284,279 @@
 
         <h2>Academic Calendar</h2>
 
-          <!-- The calendar development location in a div inside footer seciton: Acaedmic Calendar -->
-          <div class="calendar">
+        <!-- The calendar development location in a div inside footer seciton: Acaedmic Calendar -->
+        <div class="calendar">
 
-            <div class="col leftCol">
-              <div id="topCalStuff">
-                <button class="favorite styled" type="button" onclick=minFunction()>Maximize</button>
-              </div>
-              <div>
-                <img id="huskyHead"
-                  src="https://sportslogohistory.com/wp-content/uploads/2018/01/washington_huskies_1995-2000.png"
-                  alt="Husky Logo">
-              </div>
-              <div class="content">
-                <h1 class="date"></h1>
-                <div class="notes">
-                  <p>
-                    <input type="text" value="" placeholder="Events today:" />
-                  </p>
+          <div class="col leftCol">
+            <div id="topCalStuff">
+              <button class="favorite styled" type="button" onclick=minFunction()>Maximize</button>
+            </div>
+            <div>
+              <img id="huskyHead"
+                src="https://sportslogohistory.com/wp-content/uploads/2018/01/washington_huskies_1995-2000.png"
+                alt="Husky Logo">
+            </div>
+            <div class="content">
+              <h1 class="date"></h1>
+              <div class="notes">
+                <p>
+                  <input type="text" value="" placeholder="Events today:" />
+                </p>
 
-                  <!-- List of events in Calendar -->
-                  <ul class="noteList">
-                  </ul>
-                </div>
+                <!-- List of events in Calendar -->
+                <ul class="noteList">
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="col rightCol">
-              <div class="content">
-                <h2 class="year"></h2>
-                <!-- all clickable b/c of href therefore all going to the top page -->
-                <ul class="months">
-                  <li><a id='monthID1' href="javascript:;" onclick="changeMonth(1)" title="Jan" data-value="1">Jan</a>
-                  </li>
-                  <li><a id='monthID2' href="javascript:;" onclick="changeMonth(2)" title="Feb" data-value="2">Feb</a>
-                  </li>
-                  <li><a id='monthID3' href="javascript:;" onclick="changeMonth(3)" title="Mar" data-value="3"
-                      class="selected">Mar</a></li>
-                  <li><a id='monthID4' href="javascript:;" onclick="changeMonth(4)" title="Apr" data-value="4">Apr</a>
-                  </li>
-                  <li><a id='monthID5' href="javascript:;" onclick="changeMonth(5)" title="May" data-value="5">May</a>
-                  </li>
-                  <li><a id='monthID6' href="javascript:;" onclick="changeMonth(6)" title="Jun" data-value="6">Jun</a>
-                  </li>
-                  <li><a id='monthID7' href="javascript:;" onclick="changeMonth(7)" title="Jul" data-value="7">Jul</a>
-                  </li>
-                  <li><a id='monthID8' href="javascript:;" onclick="changeMonth(8)" title="Aug" data-value="8">Aug</a>
-                  </li>
-                  <li><a id='monthID9' href="javascript:;" onclick="changeMonth(9)" title="Sep" data-value="9">Sep</a>
-                  </li>
-                  <li><a id='monthID10' href="javascript:;" onclick="changeMonth(10)" title="Oct"
-                      data-value="10">Oct</a></li>
-                  <li><a id='monthID11' href="javascript:;" onclick="changeMonth(11)" title="Nov"
-                      data-value="11">Nov</a></li>
-                  <li><a id='monthID12' href="javascript:;" onclick="changeMonth(12)" title="Dec"
-                      data-value="12">Dec</a></li>
+          <div class="col rightCol">
+            <div class="content">
+              <h2 class="year"></h2>
+              <!-- all clickable b/c of href therefore all going to the top page -->
+              <ul class="months">
+                <li><a id='monthID1' href="javascript:;" onclick="changeMonth(1)" title="Jan" data-value="1">Jan</a>
+                </li>
+                <li><a id='monthID2' href="javascript:;" onclick="changeMonth(2)" title="Feb" data-value="2">Feb</a>
+                </li>
+                <li><a id='monthID3' href="javascript:;" onclick="changeMonth(3)" title="Mar" data-value="3"
+                    class="selected">Mar</a></li>
+                <li><a id='monthID4' href="javascript:;" onclick="changeMonth(4)" title="Apr" data-value="4">Apr</a>
+                </li>
+                <li><a id='monthID5' href="javascript:;" onclick="changeMonth(5)" title="May" data-value="5">May</a>
+                </li>
+                <li><a id='monthID6' href="javascript:;" onclick="changeMonth(6)" title="Jun" data-value="6">Jun</a>
+                </li>
+                <li><a id='monthID7' href="javascript:;" onclick="changeMonth(7)" title="Jul" data-value="7">Jul</a>
+                </li>
+                <li><a id='monthID8' href="javascript:;" onclick="changeMonth(8)" title="Aug" data-value="8">Aug</a>
+                </li>
+                <li><a id='monthID9' href="javascript:;" onclick="changeMonth(9)" title="Sep" data-value="9">Sep</a>
+                </li>
+                <li><a id='monthID10' href="javascript:;" onclick="changeMonth(10)" title="Oct" data-value="10">Oct</a>
+                </li>
+                <li><a id='monthID11' href="javascript:;" onclick="changeMonth(11)" title="Nov" data-value="11">Nov</a>
+                </li>
+                <li><a id='monthID12' href="javascript:;" onclick="changeMonth(12)" title="Dec" data-value="12">Dec</a>
+                </li>
 
-                  <script>
-                    // change month click function
-                    function changeMonth(x) {
-                        // clear event section
-                        var eventSection = document.getElementsByClassName('noteList')[0];
-                        eventSection.innerHTML = '';
+                <script>
+                  // change month click function
+                  function changeMonth(x) {
+                    // clear event section
+                    var eventSection = document.getElementsByClassName('noteList')[0];
+                    eventSection.innerHTML = '';
 
-                        // change currentDay class to no class if not event class
-                        var currentMonth = document.getElementsByClassName('selected')[0];
-                        currentMonth.classList.remove('selected');
-                        var newClickMonth = document.getElementById('monthID' + x);
-                        newClickMonth.classList.add('selected');
-                        // need to change days of the month and events on those days
-                        changeMonthPart2(x);
-                        getTopLeftTitleCal(1, x);
-                    }
+                    // change currentDay class to no class if not event class
+                    var currentMonth = document.getElementsByClassName('selected')[0];
+                    currentMonth.classList.remove('selected');
+                    var newClickMonth = document.getElementById('monthID' + x);
+                    newClickMonth.classList.add('selected');
+                    // need to change days of the month and events on those days
+                    changeMonthPart2(x);
+                    getTopLeftTitleCal(1, x);
+                  }
 
-                    let eventDate2 = new Array(20);
-                    eventDate2[0] = "2 27 2020";
-                    eventDate2[1] = "2 28 2020";
-                    eventDate2[2] = "3 3 2020";
-                    eventDate2[3] = "3 4 2020";
-                    eventDate2[4] = "3 5 2020"; // double date
-                    eventDate2[5] = "3 5 2020"; // double date
-                    eventDate2[6] = "3 6 2020";
-                    eventDate2[7] = "3 9 2020";
-                    eventDate2[8] = "3 10 2020";
-                    eventDate2[9] = "3 13 2020";
-                    eventDate2[10] = "3 18 2020";
-                    eventDate2[11] = "3 21 2020";
-                    eventDate2[12] = "3 22 2020";
-                    eventDate2[13] = "3 23 2020";
-                    eventDate2[14] = "3 24 2020";
-                    eventDate2[15] = "3 25 2020"; // double date
-                    eventDate2[16] = "3 25 2020"; // double date
-                    eventDate2[17] = "3 26 2020";
-                    eventDate2[18] = "4 3 2020";
-                    eventDate2[19] = "4 14 2020";
+                  let eventDate2 = new Array(20);
+                  eventDate2[0] = "2 27 2020";
+                  eventDate2[1] = "2 28 2020";
+                  eventDate2[2] = "3 3 2020";
+                  eventDate2[3] = "3 4 2020";
+                  eventDate2[4] = "3 5 2020"; // double date
+                  eventDate2[5] = "3 5 2020"; // double date
+                  eventDate2[6] = "3 6 2020";
+                  eventDate2[7] = "3 9 2020";
+                  eventDate2[8] = "3 10 2020";
+                  eventDate2[9] = "3 13 2020";
+                  eventDate2[10] = "3 18 2020";
+                  eventDate2[11] = "3 21 2020";
+                  eventDate2[12] = "3 22 2020";
+                  eventDate2[13] = "3 23 2020";
+                  eventDate2[14] = "3 24 2020";
+                  eventDate2[15] = "3 25 2020"; // double date
+                  eventDate2[16] = "3 25 2020"; // double date
+                  eventDate2[17] = "3 26 2020";
+                  eventDate2[18] = "4 3 2020";
+                  eventDate2[19] = "4 14 2020";
 
-                    var daysInMonth1 = new Array(12);
-                    daysInMonth1[0] = 31;
-                    daysInMonth1[1] = 29;
-                    daysInMonth1[2] = 31;
-                    daysInMonth1[3] = 30;
-                    daysInMonth1[4] = 31;
-                    daysInMonth1[5] = 30;
-                    daysInMonth1[6] = 31;
-                    daysInMonth1[7] = 31;
-                    daysInMonth1[8] = 30;
-                    daysInMonth1[9] = 31;
-                    daysInMonth1[10] = 30;
-                    daysInMonth1[11] = 31;
+                  var daysInMonth1 = new Array(12);
+                  daysInMonth1[0] = 31;
+                  daysInMonth1[1] = 29;
+                  daysInMonth1[2] = 31;
+                  daysInMonth1[3] = 30;
+                  daysInMonth1[4] = 31;
+                  daysInMonth1[5] = 30;
+                  daysInMonth1[6] = 31;
+                  daysInMonth1[7] = 31;
+                  daysInMonth1[8] = 30;
+                  daysInMonth1[9] = 31;
+                  daysInMonth1[10] = 30;
+                  daysInMonth1[11] = 31;
 
-                    // remake the days after chosing diff month
-                    function changeMonthPart2(x) {
-                        var daysDiv = document.getElementsByClassName('days')[0];
-                        daysDiv.innerHTML = '';
-
-                        // create empty space to index right location of days 
-                        var firstDayMonth = new Date(2020, (x - 1), 1);
-                        var getDay1 = firstDayMonth.getDay();
-                        if (getDay1 == 0) { // sunday different
-                            getDay1 = 7; // 6 spaces
-                        }
-                        for (var i = 1; i < getDay1; i++) {
-                            daysDiv.innerHTML += '<li><a id= "emptySpaceDays"' + '"></a></li>';
-                        }
-
-                        // create the days 
-                        for (var _i = 1; _i <= daysInMonth1[x - 1]; _i++) {
-                        var _addClass = '';
-                            for (var i = 0; i < 20; i++) {
-                                var splitDate1 = eventDate2[i].split(' ');
-                                if (splitDate1[0] == x && _i == splitDate1[1]) {
-                                    _addClass += ' class="event"';
-
-                                }
-
-                            }
-                            // documente.write is not working here or in days.script
-                            //var stringThis = '<li><a id= "dayCal' + _i + '" title="'+_i+'" data-value="'+_i+'" onclick ="changeEvent(' + _i + ')"'+_addClass+'>'+_i+'</a></li>';
-                            
-                            //createA.onclick = function() { alert('blah'); };
-                            //document.write(_addClass.length);
-                            if (_i == 1) {
-                                _addClass += ' class="selected"';
-                                createEventCal(1, x);
-                            }
-                            //createA.innerHTML = _i;
-                            //createLi.append(createA);
-                            //daysDiv.append(createLi);
-                            daysDiv.innerHTML += ('<li><a id= "dayCal' + _i + '" title="' + _i + '" data-value="' + _i + '" onclick ="changeEvent(' + _i + ', ' + (x - 1) + ')"' + _addClass + '>' + _i + '</a></li>');
-
-                        }
-                    }
-                </script>
-                </ul>
-                <div class="clearfix"></div>
-
-                <!-- all clickable b/c of href therefore all going to the top page -->
-                <ul class="weekday">
-                  <li><a title="Mon" data-value="1">Mon</a></li>
-                  <li><a title="Tue" data-value="2">Tue</a></li>
-                  <li><a title="Wed" data-value="3">Wed</a></li>
-                  <li><a title="Thu" data-value="4">Thu</a></li>
-                  <li><a title="Fri" data-value="5">Fri</a></li>
-                  <li><a title="Say" data-value="6">Sat</a></li>
-                  <li><a title="Sun" data-value="7">Sun</a></li>
-                </ul>
-                <div class="clearfix"></div>
-                <ul class="days">
-                  <script>
-                    // figure out what month and then add class = "selected" to that element
-                    var today = new Date();
-                    var daysInMonth = new Array(12);
-                    daysInMonth[0] = 31;
-                    daysInMonth[1] = 29;
-                    daysInMonth[2] = 31;
-                    daysInMonth[3] = 30;
-                    daysInMonth[4] = 31;
-                    daysInMonth[5] = 30;
-                    daysInMonth[6] = 31;
-                    daysInMonth[7] = 31;
-                    daysInMonth[8] = 30;
-                    daysInMonth[9] = 31;
-                    daysInMonth[10] = 30;
-                    daysInMonth[11] = 31;
-
-                    // figure out how many days in the current month onto calendar
-                    // when doing below ul element, it shows as bulletpoints
-                    var currentDay = today.getDate();
-                    var ulList = document.getElementsByClassName('days')[0];
-                    // loop once for initial loadup
-                    let eventDate1 = new Array(20);
-                    eventDate1[0] = "2 27 2020";
-                    eventDate1[1] = "2 28 2020";
-                    eventDate1[2] = "3 3 2020";
-                    eventDate1[3] = "3 4 2020";
-                    eventDate1[4] = "3 5 2020"; // double date
-                    eventDate1[5] = "3 5 2020"; // double date
-                    eventDate1[6] = "3 6 2020";
-                    eventDate1[7] = "3 9 2020";
-                    eventDate1[8] = "3 10 2020";
-                    eventDate1[9] = "3 13 2020";
-                    eventDate1[10] = "3 18 2020";
-                    eventDate1[11] = "3 21 2020";
-                    eventDate1[12] = "3 22 2020";
-                    eventDate1[13] = "3 23 2020";
-                    eventDate1[14] = "3 24 2020";
-                    eventDate1[15] = "3 25 2020"; // double date
-                    eventDate1[16] = "3 25 2020"; // double date
-                    eventDate1[17] = "3 26 2020";
-                    eventDate1[18] = "4 03 2020";
-                    eventDate1[19] = "4 14 2020";
+                  // remake the days after chosing diff month
+                  function changeMonthPart2(x) {
+                    var daysDiv = document.getElementsByClassName('days')[0];
+                    daysDiv.innerHTML = '';
 
                     // create empty space to index right location of days 
-                    var firstDayMonth = new Date(2020,2,1);
-                    for (var i = 0; i < (6 - firstDayMonth.getDay()); i++) {
-                        document.write('<li><a id= "emptySpaceDays"' + '"></a></li>');
+                    var firstDayMonth = new Date(2020, (x - 1), 1);
+                    var getDay1 = firstDayMonth.getDay();
+                    if (getDay1 == 0) { // sunday different
+                      getDay1 = 7; // 6 spaces
+                    }
+                    for (var i = 1; i < getDay1; i++) {
+                      daysDiv.innerHTML += '<li><a id= "emptySpaceDays"' + '"></a></li>';
                     }
 
-                    for (var _i = 1; _i <= daysInMonth[today.getMonth()]; _i++) {
+                    // create the days 
+                    for (var _i = 1; _i <= daysInMonth1[x - 1]; _i++) {
                       var _addClass = '';
-                      //var _addClassNew = document.createElement('li');
-                      // indicate what day it is today and highlight it
-                      if (_i == today.getDate()) {
-                        _addClass = ' class="selected"';
-
-                        //_addClassNew.className = 'selected'; // not sure if this is correct
-                        currentDay = _i;
-                      }
                       for (var i = 0; i < 20; i++) {
-                        var splitDate = eventDate1[i].split(' ');
-                        if (splitDate[0] == (today.getMonth() + 1) && _i == splitDate[1]) {
+                        var splitDate1 = eventDate2[i].split(' ');
+                        if (splitDate1[0] == x && _i == splitDate1[1]) {
                           _addClass += ' class="event"';
-                          break;
+
                         }
-                      }
 
-                      document.write('<li><a id= "dayCal' + _i + '" title="' + _i + '" data-value="' + _i + '" onclick ="changeEvent(' + _i + ', ' + (today.getMonth()) + ')"' + _addClass + '>' + _i + '</a></li>');
+                      }
+                      // documente.write is not working here or in days.script
+                      //var stringThis = '<li><a id= "dayCal' + _i + '" title="'+_i+'" data-value="'+_i+'" onclick ="changeEvent(' + _i + ')"'+_addClass+'>'+_i+'</a></li>';
+
+                      //createA.onclick = function() { alert('blah'); };
+                      //document.write(_addClass.length);
+                      if (_i == 1) {
+                        _addClass += ' class="selected"';
+                        createEventCal(1, x);
+                      }
+                      //createA.innerHTML = _i;
+                      //createLi.append(createA);
+                      //daysDiv.append(createLi);
+                      daysDiv.innerHTML += ('<li><a id= "dayCal' + _i + '" title="' + _i + '" data-value="' + _i + '" onclick ="changeEvent(' + _i + ', ' + (x - 1) + ')"' + _addClass + '>' + _i + '</a></li>');
+
+                    }
+                  }
+                </script>
+              </ul>
+              <div class="clearfix"></div>
+
+              <!-- all clickable b/c of href therefore all going to the top page -->
+              <ul class="weekday">
+                <li><a title="Mon" data-value="1">Mon</a></li>
+                <li><a title="Tue" data-value="2">Tue</a></li>
+                <li><a title="Wed" data-value="3">Wed</a></li>
+                <li><a title="Thu" data-value="4">Thu</a></li>
+                <li><a title="Fri" data-value="5">Fri</a></li>
+                <li><a title="Say" data-value="6">Sat</a></li>
+                <li><a title="Sun" data-value="7">Sun</a></li>
+              </ul>
+              <div class="clearfix"></div>
+              <ul class="days">
+                <script>
+                  // figure out what month and then add class = "selected" to that element
+                  var today = new Date();
+                  var daysInMonth = new Array(12);
+                  daysInMonth[0] = 31;
+                  daysInMonth[1] = 29;
+                  daysInMonth[2] = 31;
+                  daysInMonth[3] = 30;
+                  daysInMonth[4] = 31;
+                  daysInMonth[5] = 30;
+                  daysInMonth[6] = 31;
+                  daysInMonth[7] = 31;
+                  daysInMonth[8] = 30;
+                  daysInMonth[9] = 31;
+                  daysInMonth[10] = 30;
+                  daysInMonth[11] = 31;
+
+                  // figure out how many days in the current month onto calendar
+                  // when doing below ul element, it shows as bulletpoints
+                  var currentDay = today.getDate();
+                  var ulList = document.getElementsByClassName('days')[0];
+                  // loop once for initial loadup
+                  let eventDate1 = new Array(20);
+                  eventDate1[0] = "2 27 2020";
+                  eventDate1[1] = "2 28 2020";
+                  eventDate1[2] = "3 3 2020";
+                  eventDate1[3] = "3 4 2020";
+                  eventDate1[4] = "3 5 2020"; // double date
+                  eventDate1[5] = "3 5 2020"; // double date
+                  eventDate1[6] = "3 6 2020";
+                  eventDate1[7] = "3 9 2020";
+                  eventDate1[8] = "3 10 2020";
+                  eventDate1[9] = "3 13 2020";
+                  eventDate1[10] = "3 18 2020";
+                  eventDate1[11] = "3 21 2020";
+                  eventDate1[12] = "3 22 2020";
+                  eventDate1[13] = "3 23 2020";
+                  eventDate1[14] = "3 24 2020";
+                  eventDate1[15] = "3 25 2020"; // double date
+                  eventDate1[16] = "3 25 2020"; // double date
+                  eventDate1[17] = "3 26 2020";
+                  eventDate1[18] = "4 03 2020";
+                  eventDate1[19] = "4 14 2020";
+
+                  // create empty space to index right location of days 
+                  var firstDayMonth = new Date(2020, 2, 1);
+                  for (var i = 0; i < (6 - firstDayMonth.getDay()); i++) {
+                    document.write('<li><a id= "emptySpaceDays"' + '"></a></li>');
+                  }
+
+                  for (var _i = 1; _i <= daysInMonth[today.getMonth()]; _i++) {
+                    var _addClass = '';
+                    //var _addClassNew = document.createElement('li');
+                    // indicate what day it is today and highlight it
+                    if (_i == today.getDate()) {
+                      _addClass = ' class="selected"';
+
+                      //_addClassNew.className = 'selected'; // not sure if this is correct
+                      currentDay = _i;
+                    }
+                    for (var i = 0; i < 20; i++) {
+                      var splitDate = eventDate1[i].split(' ');
+                      if (splitDate[0] == (today.getMonth() + 1) && _i == splitDate[1]) {
+                        _addClass += ' class="event"';
+                        break;
+                      }
                     }
 
+                    document.write('<li><a id= "dayCal' + _i + '" title="' + _i + '" data-value="' + _i + '" onclick ="changeEvent(' + _i + ', ' + (today.getMonth()) + ')"' + _addClass + '>' + _i + '</a></li>');
+                  }
 
-                    // interactive clicking on days on calendar
-                    // x = day
-                    // y = month
-                    function changeEvent(x, y) {
-                      getTopLeftTitleCal(x, y + 1);
-                      // change currentDay class to no class if not event class
-                      var currentDayLi = document.getElementsByClassName('selected')[1];
-                      //currentDayLi.className = ''; same as .classList.remove()
-                      currentDayLi.classList.remove('selected'); // but its always 1 b/c always 2 selected
-                      // new select date for current click day
-                      var getCurrentDay = document.getElementById('dayCal' + x);
-                      getCurrentDay.classList.add('selected');
-                      // if u do getCurrentDay.ClassName = 'selected';, it'll remove the previous day class
-                      createEventCal(x, y);
-                      var classLength = getCurrentDay.classList;
 
-                      // returns and makes sure font color are correct when selecting an deselecting
-                      if (classLength == 'event selected') {
-                        getCurrentDay.style.color = 'white';
-                      }
-                      if (currentDayLi.classList == 'event') {
-                        currentDayLi.style.color = '#4b2e83';
-                      }
+                  // interactive clicking on days on calendar
+                  // x = day
+                  // y = month
+                  function changeEvent(x, y) {
+                    getTopLeftTitleCal(x, y + 1);
+                    // change currentDay class to no class if not event class
+                    var currentDayLi = document.getElementsByClassName('selected')[1];
+                    //currentDayLi.className = ''; same as .classList.remove()
+                    currentDayLi.classList.remove('selected'); // but its always 1 b/c always 2 selected
+                    // new select date for current click day
+                    var getCurrentDay = document.getElementById('dayCal' + x);
+                    getCurrentDay.classList.add('selected');
+                    // if u do getCurrentDay.ClassName = 'selected';, it'll remove the previous day class
+                    createEventCal(x, y);
+                    var classLength = getCurrentDay.classList;
+
+                    // returns and makes sure font color are correct when selecting an deselecting
+                    if (classLength == 'event selected') {
+                      getCurrentDay.style.color = 'white';
                     }
-                  </script>
-                </ul>
-                <div class="clearfix"></div>
-              </div>
+                    if (currentDayLi.classList == 'event') {
+                      currentDayLi.style.color = '#4b2e83';
+                    }
+                  }
+                </script>
+              </ul>
+              <div class="clearfix"></div>
             </div>
-
-            <div class="clearfix"></div>
           </div>
+
+          <div class="clearfix"></div>
         </div>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
       <div class="column" id="ThirdColumn">
         <h2>Events</h2>
@@ -614,54 +615,54 @@
 
     function getTopLeftTitleCal(x, y) {
 
-        var dateThis = new Date(2020, y - 1, x);
+      var dateThis = new Date(2020, y - 1, x);
 
-        var theMonth = new Array(12);
-        theMonth[0] = 'January';
-        theMonth[1] = 'February';
-        theMonth[2] = 'March';
-        theMonth[3] = 'April';
-        theMonth[4] = 'May';
-        theMonth[5] = 'June';
-        theMonth[6] = 'July';
-        theMonth[7] = 'August';
-        theMonth[8] = 'September';
-        theMonth[9] = 'October';
-        theMonth[10] = 'November';
-        theMonth[11] = 'December';
-        
-        var getDayCalendar = '';
+      var theMonth = new Array(12);
+      theMonth[0] = 'January';
+      theMonth[1] = 'February';
+      theMonth[2] = 'March';
+      theMonth[3] = 'April';
+      theMonth[4] = 'May';
+      theMonth[5] = 'June';
+      theMonth[6] = 'July';
+      theMonth[7] = 'August';
+      theMonth[8] = 'September';
+      theMonth[9] = 'October';
+      theMonth[10] = 'November';
+      theMonth[11] = 'December';
 
-
-        var weekday = new Array(7);
-        weekday[0] = 'Sunday';
-        weekday[1] = 'Monday';
-        weekday[2] = 'Tuesday';
-        weekday[3] = 'Wednesday';
-        weekday[4] = 'Thursday';
-        weekday[5] = 'Friday';
-        weekday[6] = 'Saturday';
-        var n = weekday[dateThis.getDay()];
-        getDayCalendar = n + '<span>';
-
-        getDayCalendar += theMonth[y - 1] + ' ' + x;
-
-        var endOfDay = new Array(5);
-        endOfDay[0] = 'th';
-        endOfDay[1] = 'st';
-        endOfDay[2] = 'nd';
-        endOfDay[3] = 'rd';
-        endOfDay[4] = 'th';
+      var getDayCalendar = '';
 
 
-        if (x % 10 >= 4) {
-          getDayCalendar += endOfDay[4] + '</span>';
-        } else {
-          getDayCalendar += endOfDay[(x % 10)] + '</span>';
-        }
-        document.getElementsByClassName('date')[0].innerHTML = getDayCalendar;
-        // Get the year update
-        document.getElementsByClassName('year')[0].innerHTML = today.getFullYear();
+      var weekday = new Array(7);
+      weekday[0] = 'Sunday';
+      weekday[1] = 'Monday';
+      weekday[2] = 'Tuesday';
+      weekday[3] = 'Wednesday';
+      weekday[4] = 'Thursday';
+      weekday[5] = 'Friday';
+      weekday[6] = 'Saturday';
+      var n = weekday[dateThis.getDay()];
+      getDayCalendar = n + '<span>';
+
+      getDayCalendar += theMonth[y - 1] + ' ' + x;
+
+      var endOfDay = new Array(5);
+      endOfDay[0] = 'th';
+      endOfDay[1] = 'st';
+      endOfDay[2] = 'nd';
+      endOfDay[3] = 'rd';
+      endOfDay[4] = 'th';
+
+
+      if (x % 10 >= 4) {
+        getDayCalendar += endOfDay[4] + '</span>';
+      } else {
+        getDayCalendar += endOfDay[(x % 10)] + '</span>';
+      }
+      document.getElementsByClassName('date')[0].innerHTML = getDayCalendar;
+      // Get the year update
+      document.getElementsByClassName('year')[0].innerHTML = today.getFullYear();
     }
 
     // source: https://www.tacoma.uw.edu/calendar/calendar#/?i=17
@@ -766,7 +767,7 @@
     createEventCal(startBool, today.getMonth() + 1);
 
     function newMonthStartBool() {
-        startBool = 0;
+      startBool = 0;
     }
 
     // array for current dates to display, get value to start the array
@@ -925,7 +926,8 @@
           place.
         </p>
         <br>
-        <img src="W.jpg" style="width: 60%; height: 80%; margin-left: auto; margin-right: auto; display: block">
+        <img src="W.jpg" style="width: 60%; height: 80%; margin-left: auto; margin-right: auto; display: block"
+          alt="somealyt">
         <br>
         <p style="text-align: center; font-style: italic"><strong>Website Contributors:</strong> Benjamin Wheat, Diana
           Muñoz, Kornsavanh
@@ -965,7 +967,7 @@
         <section>
           <div>
             <link rel="stylesheet" type="text/css" href="css/main.css">
-            <table id="infoTable">
+            <table id="infoTable0">
               <tbody>
                 <tr>
                   <td class="column1"><strong>Physical Address:</strong> 1901 S. Fawcett Avenue</td>
@@ -981,14 +983,14 @@
           <br>
           <br>
         </section>
+      </div>
+    </div>
+  </div>
 </body>
-</div>
 <div class="modal-footer">
   <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/whitney" target="_blank">
     <h3>Click to Read More About This Building</h3>
   </a>
-</div>
-</div>
 </div>
 
 <div id="YMCAModal" class="modal">
@@ -1016,7 +1018,7 @@
       <section>
         <div>
           <link rel="stylesheet" type="text/css" href="css/main.css">
-          <table id="infoTable">
+          <table id="infoTable1">
             <thead>
             </thead>
             <tbody>
@@ -1069,7 +1071,7 @@
       <section>
         <div>
           <link rel="stylesheet" type="text/css" href="css/main.css">
-          <table id="infoTable">
+          <table id="infoTable2">
             <thead>
             </thead>
             <tbody>
@@ -1104,30 +1106,30 @@
       <h2 class="aboutKnowUW">Tioga Library</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1231.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1232.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1231.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1232.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable3">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1907 Jefferson Avenue</td>
               </tr>
@@ -1137,14 +1139,14 @@
                   Mon-Fri 8:00 am - 5:00 pm
                   Sat-Sun 9:00 am - 5:00 pm
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/tioga-library-building" target="_blank">
@@ -1161,71 +1163,71 @@
       <h2 class="aboutKnowUW">Snoqualmie Building</h2>
     </div>
     <div class="modal-body">
-    	<section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <!-- TEMP IMAGE OF THE WHITNEY BUILDING -->
-              <img class="slideImg" src="BuildingImages/Snow1.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-2">
-              <img class="slideImg" src="BuildingImages/Snow1.JPG" alt="Monsieur Mints"  />
-            </div>
-            <div class="slide slide-3">
-              <img class="slideImg" src="BuildingImages/Snow3.JPG" alt="The Flower Series"  />
-            </div>
-            <div class="slide slide-4">
-              <img class="slideImg" src="BuildingImages/Snow4.JPG" alt="Salt o' The Sea"  />
-            </div>
-            <div class="slide slide-5">
-              <img class="slideImg" src="BuildingImages/Snow5.JPG" alt="Salt o' The Sea"  />
-            </div>
-            <div class="slide slide-6">
-              <img class="slideImg" src="BuildingImages/Snow6.JPG" alt="Salt o' The Sea"  />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <!-- TEMP IMAGE OF THE WHITNEY BUILDING -->
+                <img class="slideImg" src="BuildingImages/Snow1.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-2">
+                <img class="slideImg" src="BuildingImages/Snow1.JPG" alt="Monsieur Mints" />
+              </div>
+              <div class="slide slide-3">
+                <img class="slideImg" src="BuildingImages/Snow3.JPG" alt="The Flower Series" />
+              </div>
+              <div class="slide slide-4">
+                <img class="slideImg" src="BuildingImages/Snow4.JPG" alt="Salt o' The Sea" />
+              </div>
+              <div class="slide slide-5">
+                <img class="slideImg" src="BuildingImages/Snow5.JPG" alt="Salt o' The Sea" />
+              </div>
+              <div class="slide slide-6">
+                <img class="slideImg" src="BuildingImages/Snow6.JPG" alt="Salt o' The Sea" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      </section>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable4">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1902-10 Commerce Street</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
-                      Monday - Thursday: 7am-12am
-                      <br>
-                      Friday: 7am-5pm
-                      <br>
-                      Saturday: 9am-5pm
-                      <br>
-                      Sunday: 9am-9pm
-                      <br>
-                      <br>
-                      Holiday Closures:
-                      <br>
-                      Monday, January 20th - Martin Luther King Jr., Day
-                      <br>
-                      Monday, February 17th - President's Day
+                  <strong>Building Hours:</strong>
+                  <br>
+                  Monday - Thursday: 7am-12am
+                  <br>
+                  Friday: 7am-5pm
+                  <br>
+                  Saturday: 9am-5pm
+                  <br>
+                  Sunday: 9am-9pm
+                  <br>
+                  <br>
+                  Holiday Closures:
+                  <br>
+                  Monday, January 20th - Martin Luther King Jr., Day
+                  <br>
+                  Monday, February 17th - President's Day
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
+          </table>
+        </div>
         <br>
         <br>
-    </section>
-</body>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/snoqualmie-building" target="_blank">
@@ -1242,64 +1244,65 @@
       <h2 class="aboutKnowUW">Science Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-    <div class="slider">
-      <div class="slide-viewer">
-        <div class="slide-group">
-          <div class="slide slide-1">
-            <!-- TEMP IMAGE OF THE WHITNEY BUILDING -->
-            <img class="slideImg" src="BuildingImages/Sci2.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <!-- TEMP IMAGE OF THE WHITNEY BUILDING -->
+                <img class="slideImg" src="BuildingImages/Sci2.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-2">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/science.jpg"
+                  alt="sc1" />
+              </div>
+              <div class="slide slide-3">
+                <img class="slideImg" src="BuildingImages/Sci3.JPG">
+              </div>
+              <div class="slide slide-4">
+                <img class="slideImg" src="BuildingImages/Sci4.JPG" />
+              </div>
+              <div class="slide slide-4">
+                <img class="slideImg" src="BuildingImages/Sci5.JPG" />
+              </div>
+              <div class="slide slide-4">
+                <img class="slideImg" src="BuildingImages/Sci6.JPG" />
+              </div>
+            </div>
           </div>
-          <div class="slide slide-2">
-            <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/science.jpg" alt="sc1"  />
-          </div>
-          <div class="slide slide-3">
-            <img class="slideImg" src="BuildingImages/Sci3.JPG">
-          </div>
-          <div class="slide slide-4">
-            <img class="slideImg" src="BuildingImages/Sci4.JPG" />
-          </div>
-          <div class="slide slide-4">
-            <img class="slideImg" src="BuildingImages/Sci5.JPG" />
-          </div>
-          <div class="slide slide-4">
-            <img class="slideImg" src="BuildingImages/Sci6.JPG" />
-          </div>
+          <div class="slide-buttons"></div>
         </div>
-      </div>
-      <div class="slide-buttons"></div>
-    </div>
-</section>
+      </section>
 
-  <!-- Information About the building in this section -->
-  <section>
-    <div>
-      <link rel="stylesheet" type="text/css" href="css/main.css">
-      <table id="infoTable">
-        <thead>
-        </thead>
-        <tbody>
-            <tr>
-              <td class="column1"><strong>Physical Address:</strong> 1745 Jefferson Avenue</td>
-            </tr>
-            <tr>
-              <td class="column1">
-                <strong>Building Hours:</strong>
-                <br>
-                Monday - Thursday: 7am-10pm (keycard required after 5pm)
-                <br>
-                Friday: 7am-5pm
-                <br>
-                Weekends: Subject to events and class schedules
-              </td>
-            </tr>           
-          </tbody>
-      </table>
-    </div>
-      <br>
-      <br>
-  </section>
-</body>
+      <!-- Information About the building in this section -->
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable5">
+            <thead>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="column1"><strong>Physical Address:</strong> 1745 Jefferson Avenue</td>
+              </tr>
+              <tr>
+                <td class="column1">
+                  <strong>Building Hours:</strong>
+                  <br>
+                  Monday - Thursday: 7am-10pm (keycard required after 5pm)
+                  <br>
+                  Friday: 7am-5pm
+                  <br>
+                  Weekends: Subject to events and class schedules
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/science-sci" target="_blank">
@@ -1316,48 +1319,49 @@
       <h2 class="aboutKnowUW">Tacoma Paper & Stationery</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/TPS-430x287.jpg" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1234.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/TPS-430x287.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1234.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable6">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1735 Jefferson Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/tacoma-paper-stationery" target="_blank">
@@ -1374,48 +1378,49 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Dougan Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/dougan_commerce.jpg" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1239.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg"
+                  src="https://www.tacoma.uw.edu/sites/default/files/global/images/dougan_commerce.jpg" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1239.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable7">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1721 Jefferson Avenue </td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/dougan-dou" target="_blank">
@@ -1432,48 +1437,48 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Mattress Factory Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1229.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1278.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1229.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1278.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable8">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1953 C Street </td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/mattress-factory-mat" target="_blank">
@@ -1490,51 +1495,52 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Keystone Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/keystone.jpg" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages/Key1.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages/Key2.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/keystone.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages/Key1.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages/Key2.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable9">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1754 Commerce Street</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
                   Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/keystone-key" target="_blank">
@@ -1551,54 +1557,55 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Pinkerton Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1237.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/pinkerton.jpg" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1238.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1236.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1237.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/pinkerton.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1238.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1236.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable10">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1702 Broadway Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
                   Monday - Friday: 9 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/pinkerton" target="_blank">
@@ -1615,51 +1622,52 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Carlton Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages/joy1.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/joy_bldg.jpg" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages/joy2.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages/joy1.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/joy_bldg.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages/joy2.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable11">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1718 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
                   Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/carlton-center-car" target="_blank">
@@ -1676,51 +1684,52 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Joy Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages/joy1.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/joy_bldg.jpg" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages/joy2.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages/joy1.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/joy_bldg.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages/joy2.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable12">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong>1718 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
                   Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/russell-t-joy" target="_blank">
@@ -1737,56 +1746,57 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">West Coast Grocery Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages/WCG1.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-2">
-              <img class="slideImg" src="BuildingImages/WCG2.JPG" alt="Monsieur Mints"  />
-            </div>
-            <div class="slide slide-2">
-              <img class="slideImg" src="BuildingImages/WCG3.JPG" alt="Monsieur Mints"  />
-            </div>
-            <div class="slide slide-3">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/wcg-photo.jpg" alt="The Flower Series"  />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages/WCG1.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-2">
+                <img class="slideImg" src="BuildingImages/WCG2.JPG" alt="Monsieur Mints" />
+              </div>
+              <div class="slide slide-2">
+                <img class="slideImg" src="BuildingImages/WCG3.JPG" alt="Monsieur Mints" />
+              </div>
+              <div class="slide slide-3">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/wcg-photo.jpg"
+                  alt="The Flower Series" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      </section>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable13">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1732-38 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Monday - Thursday: 7am-10pm (keycard required after 5pm)
                   <br>
                   Friday: 7am-5pm
                   <br>
                   Weekends: Subject to events and class schedules
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/west-coast-grocery-wcg" target="_blank">
@@ -1803,53 +1813,55 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Birmingham Hay & Seed Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/bhs-photo.jpg" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/bhs-photo.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1221.JPG" alt="Map" />
+              </div>
+
             </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1221.JPG" alt="Map" />
-            </div>
-            
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="14">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1">
-                    <strong>Physical Address:</strong>
-                    <br>
-                  Note: Birmingham Hay & Seed can only be entered on the Commerce Street side or through the main hallway in GWP or WCG. There is no Pacific Avenue entrance for this building.
-                  1740-44  Pacific Avenue</td>
+                  <strong>Physical Address:</strong>
+                  <br>
+                  Note: Birmingham Hay & Seed can only be entered on the Commerce Street side or through the main
+                  hallway in GWP or WCG. There is no Pacific Avenue entrance for this building.
+                  1740-44 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/birmingham-hay-seed-bhs" target="_blank">
@@ -1866,53 +1878,55 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Birmingham Block Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/bhs-photo.jpg" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/bhs-photo.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1221.JPG" alt="Map" />
+              </div>
+
             </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1221.JPG" alt="Map" />
-            </div>
-            
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable14">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1">
-                    <strong>Physical Address:</strong>
-                    <br>
-                  Note: Birmingham Block can only be entered on the Commerce Street side or through the main hallway in GWP or WCG. There is no Pacific Avenue entrance for this building.
-                  1740-44  Pacific Avenue</td>
+                  <strong>Physical Address:</strong>
+                  <br>
+                  Note: Birmingham Block can only be entered on the Commerce Street side or through the main hallway in
+                  GWP or WCG. There is no Pacific Avenue entrance for this building.
+                  1740-44 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/birmingham-block-bb" target="_blank">
@@ -1929,54 +1943,56 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Garretson Woodruff & Pratt Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/gwp_wcg.jpg" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1223.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1222.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/gwp_wcg.jpg"
+                  alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1223.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1222.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable15">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
-                <td class="column1"><strong>Physical Address:</strong> 1754  Pacific Avenue</td>
+                <td class="column1"><strong>Physical Address:</strong> 1754 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
-      <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/garretson-woodruff-pratt-gwp" target="_blank">
+      <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/garretson-woodruff-pratt-gwp"
+        target="_blank">
         <h3>Click to Read More About This Building</h3>
       </a>
     </div>
@@ -1990,48 +2006,49 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Walsh Gardner Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1225.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="https://www.tacoma.uw.edu/sites/default/files/global/images/walsh_gardner.jpg" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1225.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg"
+                  src="https://www.tacoma.uw.edu/sites/default/files/global/images/walsh_gardner.jpg" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable16">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1908 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/walsh-gardner-wg" target="_blank">
@@ -2048,48 +2065,48 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">William Philips Hall</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1226.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1275.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1226.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1275.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable17">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1918 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/william-w-philip-hall-wph" target="_blank">
@@ -2106,48 +2123,48 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Cherry Parkes Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1228.JPG" alt="Map" />
-            </div>
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1274.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1228.JPG" alt="Map" />
+              </div>
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1274.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable18">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1922 Pacific Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/cherry-parkes-cp" target="_blank">
@@ -2164,45 +2181,45 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">McDonald Smith Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="BuildingImages\DSC_1230.JPG" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="BuildingImages\DSC_1230.JPG" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="infoTable19">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1932 Pacific Avenue </td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
+                  <strong>Building Hours:</strong>
+                  <br>
                   Public access
-Monday - Friday: 7 a.m. - 5 p.m.
+                  Monday - Friday: 7 a.m. - 5 p.m.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/mcdonald-smith-mds" target="_blank">
@@ -2219,44 +2236,44 @@ Monday - Friday: 7 a.m. - 5 p.m.
       <h2 class="aboutKnowUW">Laborers Building</h2>
     </div>
     <div class="modal-body">
-     <section>
-      <div class="slider">
-        <div class="slide-viewer">
-          <div class="slide-group">
-            <div class="slide slide-1">
-              <img class="slideImg" src="laborers_hall.jpg" alt="Map" />
+      <section>
+        <div class="slider">
+          <div class="slide-viewer">
+            <div class="slide-group">
+              <div class="slide slide-1">
+                <img class="slideImg" src="laborers_hall.jpg" alt="Map" />
+              </div>
             </div>
           </div>
+          <div class="slide-buttons"></div>
         </div>
-        <div class="slide-buttons"></div>
-      </div>
 
-    </section>
+      </section>
 
-    <section>
-      <div>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <table id="infoTable">
-          <thead>
-          </thead>
-          <tbody>
+      <section>
+        <div>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <table id="20">
+            <thead>
+            </thead>
+            <tbody>
               <tr>
                 <td class="column1"><strong>Physical Address:</strong> 1901 S. Fawcett Avenue</td>
               </tr>
               <tr>
                 <td class="column1">
-                    <strong>Building Hours:</strong>
-                    <br>
-                  No public access. Open only for scheduled classes and events. 
+                  <strong>Building Hours:</strong>
+                  <br>
+                  No public access. Open only for scheduled classes and events.
                 </td>
-              </tr>           
+              </tr>
             </tbody>
-        </table>
-      </div>
-      <br>
-      <br>
-  </section>
-</body>
+          </table>
+        </div>
+        <br>
+        <br>
+      </section>
+      </body>
     </div>
     <div class="modal-footer">
       <a class="clickToReadMore" href="https://www.tacoma.uw.edu/campus-map/laborers-hall" target="_blank">
@@ -2317,23 +2334,23 @@ Monday - Friday: 7 a.m. - 5 p.m.
   var span1 = document.getElementsByClassName("close1")[0];
   var span2 = document.getElementsByClassName("close2")[0];
   var span3 = document.getElementsByClassName("close3")[0];
-  var span4 = document.getElementsByClassName("close4")[0]; 
+  var span4 = document.getElementsByClassName("close4")[0];
   var span5 = document.getElementsByClassName("close5")[0];
   var span6 = document.getElementsByClassName("close6")[0];
   var span7 = document.getElementsByClassName("close7")[0];
   var span8 = document.getElementsByClassName("close8")[0];
   var span9 = document.getElementsByClassName("close9")[0];
-  var span10 = document.getElementsByClassName("close10")[0]; 
+  var span10 = document.getElementsByClassName("close10")[0];
   var span11 = document.getElementsByClassName("close11")[0];
-  var span12 = document.getElementsByClassName("close12")[0]; 
+  var span12 = document.getElementsByClassName("close12")[0];
   var span13 = document.getElementsByClassName("close13")[0];
-  var span14 = document.getElementsByClassName("close14")[0]; 
+  var span14 = document.getElementsByClassName("close14")[0];
   var span15 = document.getElementsByClassName("close15")[0];
-  var span16 = document.getElementsByClassName("close16")[0]; 
+  var span16 = document.getElementsByClassName("close16")[0];
   var span17 = document.getElementsByClassName("close17")[0];
-  var span18 = document.getElementsByClassName("close18")[0]; 
+  var span18 = document.getElementsByClassName("close18")[0];
   var span19 = document.getElementsByClassName("close19")[0];
-  var span20 = document.getElementsByClassName("close20")[0]; 
+  var span20 = document.getElementsByClassName("close20")[0];
   var span21 = document.getElementsByClassName("close21")[0];
   var span22 = document.getElementsByClassName("close22")[0];  // Way to Close Modal
   logo.onclick = function () {
